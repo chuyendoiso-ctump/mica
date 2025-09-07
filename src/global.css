@@ -406,6 +406,67 @@ iframe {
     }
 }
 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Table improvements for desktop */
+    .table {
+        font-size: 0.95rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.75rem 1rem;
+        vertical-align: middle;
+    }
+    
+    .table th:first-child,
+    .table td:first-child {
+        width: 20%;
+        min-width: 120px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        width: 50%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .table th:last-child,
+    .table td:last-child {
+        width: 30%;
+        min-width: 200px;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    /* Session headers on desktop */
+    .table tr[style*="background: linear-gradient"] td {
+        padding: 25px 1.5rem !important;
+        font-size: 1.1rem !important;
+        line-height: 1.4;
+    }
+    
+    .table tr[style*="border-left: 4px"] td {
+        padding: 15px 1.5rem !important;
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+    
+    /* Better spacing for content */
+    .table td:nth-child(2) {
+        word-spacing: 0.1em;
+    }
+    
+    /* Speaker names formatting */
+    .table td:last-child {
+        word-break: keep-all;
+    }
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .criterias > div {
@@ -423,6 +484,47 @@ iframe {
 
     .criterias > div:last-child::before {
         content: unset !important;
+    }
+
+    /* Enhanced table for large screens */
+    .table {
+        font-size: 1rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 1rem 1.5rem;
+    }
+    
+    .table th:first-child,
+    .table td:first-child {
+        width: 18%;
+        min-width: 140px;
+    }
+    
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        width: 52%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .table th:last-child,
+    .table td:last-child {
+        width: 30%;
+        min-width: 220px;
+        font-size: 0.95rem;
+    }
+    
+    /* Session headers on large screens */
+    .table tr[style*="background: linear-gradient"] td {
+        padding: 30px 2rem !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .table tr[style*="border-left: 4px"] td {
+        padding: 18px 2rem !important;
+        font-size: 1rem !important;
     }
 
     /* Your CSS rules for extra large devices */
@@ -446,4 +548,99 @@ iframe {
 .alice-carousel ul li img {
     max-width: 120px;
     max-height: 120px;
+}
+
+/* Responsive table styling for mobile */
+@media (max-width: 767.98px) {
+    .table {
+        font-size: 0.85rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.5rem 0.3rem;
+        vertical-align: top;
+    }
+    
+    .table th:first-child,
+    .table td:first-child {
+        width: 25%;
+        min-width: 80px;
+    }
+    
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        width: 50%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    .table th:last-child,
+    .table td:last-child {
+        width: 25%;
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    /* Session headers on mobile */
+    .table tr[style*="background: linear-gradient"] td {
+        padding: 15px 0.5rem !important;
+        font-size: 1rem !important;
+        line-height: 1.3;
+    }
+    
+    .table tr[style*="border-left: 4px"] td {
+        padding: 10px 0.5rem !important;
+        font-size: 0.8rem !important;
+        line-height: 1.4;
+    }
+    
+    /* Break long speaker names */
+    .table td:last-child {
+        word-break: break-word;
+        hyphens: auto;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .table {
+        font-size: 0.8rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.4rem 0.2rem;
+    }
+    
+    .table th:first-child,
+    .table td:first-child {
+        width: 28%;
+        min-width: 70px;
+    }
+    
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        width: 44%;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+    
+    .table th:last-child,
+    .table td:last-child {
+        width: 28%;
+        min-width: 90px;
+        font-size: 0.75rem;
+    }
+    
+    /* Session headers on very small screens */
+    .table tr[style*="background: linear-gradient"] td {
+        padding: 12px 0.3rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .table tr[style*="border-left: 4px"] td {
+        padding: 8px 0.3rem !important;
+        font-size: 0.75rem !important;
+    }
 }
