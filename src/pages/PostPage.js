@@ -40,7 +40,7 @@ const PostPage = () => {
                         <>
                             <div
                                 style={{
-                                    backgroundImage: `url(/post/${id}.webp)`,
+                                    backgroundImage: `url(/post/${id == '4' ? 'conference_main' : id}.webp)`,
                                     backgroundSize: 'cover',
                                     backgroundPositionY: '25%',
                                     width: '100%',
