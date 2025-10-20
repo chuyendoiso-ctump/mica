@@ -629,12 +629,6 @@ const HomePage = () => {
                         >
                             <NewsTile id={2} />
                         </Col>
-                        <Col
-                            xs={12}
-                            lg={4}
-                        >
-                            <NewsTile id={3} />
-                        </Col>
                     </Row>
                 </Container>
             </Section>
