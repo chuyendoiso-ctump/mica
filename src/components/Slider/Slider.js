@@ -7,6 +7,16 @@ const Slider = () => {
         <Carousel interval={5000}>
             <Carousel.Item>
                 <img
+                    // ratio 488∶195
+                    style={{
+                        aspectRatio: '488 / 195',
+                    }}
+                    src="/slide/8.webp"
+                    className="slide-img"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
                     src="/slide/6.webp"
                     className="slide-img"
                 />

@@ -333,6 +333,9 @@ const HomePage = () => {
                                 const today = new Date();
                                 const eventDateObj = new Date(date);
                                 const isClosed = eventDateObj < today;
+                                const currentYear = today.getFullYear();
+                                const eventYear = eventDateObj.getFullYear();
+                                const shouldShowYear = eventYear !== currentYear;
                                 return (
                                     <Col
                                         xs={12}
@@ -350,11 +353,12 @@ const HomePage = () => {
                                         >
                                             <div className="event-header p-4 py-3">
                                                 <div className="month">
-                                                    {
-                                                        monthNames?.[
-                                                            eventDateObj.getMonth()
-                                                        ]
-                                                    }
+                                                    {monthNames?.[
+                                                        eventDateObj.getMonth()
+                                                    ]}
+                                                    {shouldShowYear && (
+                                                        <span> {eventYear}</span>
+                                                    )}
                                                 </div>
                                                 <div className="date">
                                                     <span className="d-inline-block">

@@ -56,4 +56,12 @@ export const events = [
         title: 'Tổng kết hội nghị thượng đỉnh tim mạch 2025',
         isSpecial: true,
     },
+    {
+        id: 8,
+        date: '2026-05-16',
+        title: 'Hội nghị khoa học Tim mạch Can thiệp Mekong lần II – 2026',
+        description: 'Tiến bộ và thách thức trong tim mạch',
+        isSpecial: true,
+        location: 'Khách sạn Hilton Đà Nẵng',
+    },
 ];
