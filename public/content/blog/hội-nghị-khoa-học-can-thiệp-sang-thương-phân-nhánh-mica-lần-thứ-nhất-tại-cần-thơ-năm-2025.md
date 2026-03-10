@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/conference_main.webp
+image: ../post/mica-conference-2025/image9.webp
 date: 2025-10-19T00:00:00.000+07:00
 tag:
   - Hội nghị MICA
@@ -9,7 +9,7 @@ tag:
   - Bifurcation PCI
   - Live case
   - Đào tạo y khoa
-title: Hội Nghị Khoa Học: Can thiệp sang thương phân nhánh MICA lần thứ nhất tại Cần Thơ năm 2025
+title: Hội Nghị Khoa Học - Can thiệp sang thương phân nhánh MICA lần thứ nhất tại Cần Thơ năm 2025
 ---
 <div class="sub-heading" style="text-align: justify;">GIỚI THIỆU</div>
 <p style="text-align: justify;">Ng&agrave;y 27/09/2025 tại TP. Cần Thơ, Hội nghị Can thiệp sang thương ph&acirc;n nh&aacute;nh MICA lần thứ nhất đ&atilde; diễn ra th&agrave;nh c&ocirc;ng, đ&aacute;nh dấu một cột mốc quan trọng trong h&agrave;nh tr&igrave;nh n&acirc;ng cao chất lượng v&agrave; chuẩn h&oacute;a kỹ thuật can thiệp sang thương ph&acirc;n nh&aacute;nh (bifurcation PCI) tại khu vực Mekong n&oacute;i ri&ecirc;ng v&agrave; tr&ecirc;n to&agrave;n quốc n&oacute;i chung.</p>
