@@ -4,7 +4,7 @@ import Footer from 'components/Footer';
 import Header from 'components/Header';
 import Section from 'components/Section';
 import Slider from 'components/Slider';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { events } from '../constants/event';
 import clsx from 'clsx';
@@ -28,6 +28,22 @@ const monthNames = [
 ];
 
 const HomePage = () => {
+    const [latestPosts, setLatestPosts] = useState([]);
+
+    useEffect(() => {
+        const loadPosts = async () => {
+            try {
+                const res = await fetch('/content/blog/index.json');
+                const data = await res.json();
+                setLatestPosts(data.slice(0, 3));
+            } catch (err) {
+                console.error('Load posts error:', err);
+            }
+        };
+
+        loadPosts();
+    }, []);
+
     const renderBanner = () => <Slider />;
 
     const renderIntroduction = () => {
@@ -615,24 +631,15 @@ const HomePage = () => {
                         </a>
                     </div>
                     <Row>
-                        <Col
-                            xs={12}
-                            lg={4}
-                        >
-                            <NewsTile slug="Post1" />
-                        </Col>
-                        <Col
-                            xs={12}
-                            lg={4}
-                        >
-                            <NewsTile slug="Post2" />
-                        </Col>
-                        <Col
-                            xs={12}
-                            lg={4}
-                        >
-                            <NewsTile slug="Post1" />
-                        </Col>
+                        {latestPosts.map((slug) => (
+                            <Col
+                                xs={12}
+                                lg={4}
+                                key={slug}
+                            >
+                                <NewsTile slug={slug} />
+                            </Col>
+                        ))}
                     </Row>
                 </Container>
             </Section>
