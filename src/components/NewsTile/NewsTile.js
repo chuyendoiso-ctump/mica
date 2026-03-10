@@ -9,13 +9,22 @@ const NewsTile = ({ slug, landscape = false }) => {
   const getShortContent = (content, words = 50) => {
     if (!content) return "";
 
-    const cleanText = content
+    let cleanText = content
       .replace(/<\/?[^>]+(>|$)/g, "") // remove html tags
       .replace(/\n/g, " ")
       .replace(/\s+/g, " ")
       .trim();
 
-    return cleanText.split(" ").slice(0, words).join(" ") + "...";
+    if (typeof document !== "undefined") {
+      const txt = document.createElement("textarea");
+      txt.innerHTML = cleanText;
+      cleanText = txt.value;
+    }
+
+    const wordsArray = cleanText.split(" ");
+    if (wordsArray.length <= words) return cleanText;
+
+    return wordsArray.slice(0, words).join(" ") + "...";
   };
 
   const parseMarkdown = (text) => {
