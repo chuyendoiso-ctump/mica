@@ -35,26 +35,30 @@ export async function onRequestGet(context) {
         // authorization:github:success:{"token":"...", "provider":"github"}
         // Decap CMS expects exactly this format:
         // authorization:github:success:{"token":"...", "provider":"github"}
+        // Decap CMS EXPECTS this specific two-way handshake format
         const script = `
-        const payload = {
-            token: "${token}",
-            provider: "${provider}"
-        };
-        const message = "authorization:${provider}:success:" + JSON.stringify(payload);
-        
-        console.log("Sending token to parent window:", message);
-        
-        if (window.opener) {
-            window.opener.postMessage(message, "*");
-        } else {
-            console.error("No window.opener found! Are you running this in a popup?");
+      function receiveMessage(e) {
+        console.log("receiveMessage %o", e)
+        const allowedOrigins = [
+             new URL(window.location.href).origin
+        ];
+        if (!allowedOrigins.includes(e.origin)) {
+            console.log("Origin not allowed");
+            return;
         }
         
-        // Always close the window after a short delay
-        setTimeout(() => {
-            window.close();
-        }, 1000);
-        `;
+        console.log("sending message back to window.opener");
+        window.opener.postMessage(
+          'authorization:github:success:{"token":"${token}","provider":"github"}',
+          e.origin
+        )
+      }
+      
+      console.log("Adding message listener");
+      window.addEventListener("message", receiveMessage, false)
+      console.log("Sending initial message to window.opener");
+      window.opener.postMessage("authorizing:github", "*")
+      `;
 
         const html = `<!DOCTYPE html>
 <html>
