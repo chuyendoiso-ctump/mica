@@ -368,12 +368,12 @@ const HomePage = () => {
                                                         className={clsx(
                                                             'time',
                                                             isClosed &&
-                                                                'closed',
+                                                            'closed',
                                                         )}
                                                     >
                                                         {isClosed ?
                                                             'CLOSED'
-                                                        :   time}
+                                                            : time}
                                                     </span>
                                                 </div>
                                             </div>
@@ -619,19 +619,19 @@ const HomePage = () => {
                             xs={12}
                             lg={4}
                         >
-                            <NewsTile id={4} />
+                            <NewsTile slug="Post1" />
                         </Col>
                         <Col
                             xs={12}
                             lg={4}
                         >
-                            <NewsTile id={1} />
+                            <NewsTile slug="Post2" />
                         </Col>
                         <Col
                             xs={12}
                             lg={4}
                         >
-                            <NewsTile id={2} />
+                            <NewsTile slug="Post1" />
                         </Col>
                     </Row>
                 </Container>

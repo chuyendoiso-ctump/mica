@@ -62,6 +62,6 @@ export const events = [
         title: 'Hội nghị khoa học Tim mạch Can thiệp Mekong lần II – 2026',
         description: 'Tiến bộ và thách thức trong tim mạch',
         isSpecial: true,
-        location: 'Khách sạn Hilton Đà Nẵng',
+        location: 'Cần Thơ',
     },
 ];

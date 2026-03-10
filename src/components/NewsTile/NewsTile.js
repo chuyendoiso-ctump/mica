@@ -77,7 +77,7 @@ const NewsTile = ({ slug, landscape = false }) => {
           date: data.date || "",
           tag: data.tag || [],
           image: data.image || "",
-          shortContent: getShortContent(content, 50),
+          shortContent: getShortContent(content, 30),
         });
       } catch (err) {
         console.error("Load markdown error:", err);
