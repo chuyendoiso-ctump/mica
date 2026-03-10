@@ -32,22 +32,26 @@ export async function onRequestGet(context) {
 
         // Decap CMS expects exactly this HTML message to receive the token
         const script = `
-    const receiveMessage = (message) => {
-        const allowedOrigins = [
-            new URL(window.location.href).origin
-        ];
+        function receiveMessage(e) {
+            console.log("receiveMessage %o", e);
+            if (!e.data || e.data !== "authorizing:${provider}") return;
+            
+            console.log("sending message back to window.opener");
+            window.opener.postMessage(
+                "authorization:${provider}:success:${JSON.stringify({
+            token: "${token}",
+            provider: "${provider}"
+        })}",
+                e.origin
+            );
+        }
 
-        if (!allowedOrigins.includes(message.origin)) return;
-
-        window.opener.postMessage(
-            "authorization:${provider}:success:${JSON.stringify({ token })}",
-            message.origin
-        );
-    };
-
-    window.addEventListener("message", receiveMessage, false);
-    window.opener.postMessage("authorizing:${provider}", "*");
-    `;
+        console.log("Adding event listener");
+        window.addEventListener("message", receiveMessage, false);
+        
+        console.log("Sending initial message to window.opener");
+        window.opener.postMessage("authorizing:${provider}", "*");
+        `;
 
         const html = `<!DOCTYPE html>
 <html>
@@ -56,6 +60,7 @@ export async function onRequestGet(context) {
         <title>OAuth Callback</title>
     </head>
     <body>
+        <p>Authentication successful! Please wait...</p>
         <script>${script}</script>
     </body>
 </html>`;
