@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
-  repo: https://github.com/chuyendoiso-ctump/mica.git
+  name: github
+  repo: chuyendoiso-ctump/mica
   branch: main
+  base_url: https://auth.sveltia.app
 
 media_folder: "images/uploads"
 public_folder: "public/images/uploads"
