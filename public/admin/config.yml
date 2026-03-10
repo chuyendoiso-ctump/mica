@@ -2,7 +2,8 @@ backend:
   name: github
   repo: chuyendoiso-ctump/mica
   branch: main
-  base_url: https://deca-auth-backend.netlify.app
+  base_url: /api
+  auth_endpoint: auth
 
 media_folder: "images/uploads"
 public_folder: "public/images/uploads"
