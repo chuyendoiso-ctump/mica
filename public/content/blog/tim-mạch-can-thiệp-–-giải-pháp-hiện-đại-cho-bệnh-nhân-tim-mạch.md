@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/2.jpg
+image: /images/uploads/2.webp
 date: 2025-03-14T00:00:00.000+07:00
 tag:
   - Tim mạch can thiệp
