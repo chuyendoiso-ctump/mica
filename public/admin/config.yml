@@ -5,8 +5,8 @@ backend:
   base_url: https://micaheart.org
   auth_endpoint: api/auth
 
-media_folder: "images/uploads"
-public_folder: "images/uploads"
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "blog"

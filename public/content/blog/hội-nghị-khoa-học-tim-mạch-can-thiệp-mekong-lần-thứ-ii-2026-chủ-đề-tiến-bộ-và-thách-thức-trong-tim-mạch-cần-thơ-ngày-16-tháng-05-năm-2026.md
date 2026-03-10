@@ -26,7 +26,7 @@ Chi hội Tim mạch Can thiệp Mekong (MICA) trân trọng thông báo tổ ch
 
 **CHƯƠNG TRÌNH HỘI NGHỊ**
 
-![](public/images/uploads/screenshot-2026-03-10-172019.png)
+![](/images/uploads/screenshot-2026-03-10-172019.png)
 
 **1. ĐỐI TƯỢNG THAM GIA**
 
