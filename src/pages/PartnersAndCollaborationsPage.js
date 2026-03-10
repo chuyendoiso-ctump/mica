@@ -130,6 +130,266 @@ const PartnersAndCollaborationsPage = () => {
                                     <img src="/partner/12.webp" />
                                 </div>
                             </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/13.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/14.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/15.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/16.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/17.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/18.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/19.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/20.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/21.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/22.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/23.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/24.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/25.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/26.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/27.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/28.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/29.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/30.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/31.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/32.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/33.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/34.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/35.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/36.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/37.webp" />
+                                </div>
+                            </Col>
+
+                            <Col
+                                xs={6}
+                                md={4}
+                                lg={3}
+                            >
+                                <div className="partner-tile">
+                                    <img src="/partner/38.webp" />
+                                </div>
+                            </Col>
                         </Row>
                         <div className="sub-heading mt-5">Bệnh viện</div>
                         <Row>

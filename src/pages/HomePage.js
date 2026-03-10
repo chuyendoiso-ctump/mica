@@ -429,7 +429,7 @@ const HomePage = () => {
                         mouseTracking
                         touchTracking
                         // disableDotsControls
-                        items={new Array(12).fill(0).map((_, index) => (
+                        items={new Array(38).fill(0).map((_, index) => (
                             <img
                                 key={index}
                                 src={`/partner/${index + 1}.webp`}
