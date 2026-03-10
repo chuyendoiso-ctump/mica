@@ -39,13 +39,6 @@ export async function onRequestGet(context) {
         const script = `
       function receiveMessage(e) {
         console.log("receiveMessage %o", e)
-        const allowedOrigins = [
-             new URL(window.location.href).origin
-        ];
-        if (!allowedOrigins.includes(e.origin)) {
-            console.log("Origin not allowed");
-            return;
-        }
         
         console.log("sending message back to window.opener");
         window.opener.postMessage(
