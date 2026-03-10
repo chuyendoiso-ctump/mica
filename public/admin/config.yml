@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: trantuquyenn1129-code/Post
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
