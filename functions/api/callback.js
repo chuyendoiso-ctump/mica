@@ -31,26 +31,25 @@ export async function onRequestGet(context) {
         const provider = "github";
 
         // Decap CMS expects exactly this HTML message to receive the token
+        // Decap CMS expects exactly this format:
+        // authorization:github:success:{"token":"...", "provider":"github"}
         const script = `
-        function receiveMessage(e) {
-            console.log("receiveMessage %o", e);
-            if (!e.data || e.data !== "authorizing:${provider}") return;
-            
-            console.log("sending message back to window.opener");
-            window.opener.postMessage(
-                "authorization:${provider}:success:${JSON.stringify({
+        const message = "authorization:${provider}:success:${JSON.stringify({
             token: "${token}",
             provider: "${provider}"
-        })}",
-                e.origin
-            );
-        }
-
-        console.log("Adding event listener");
-        window.addEventListener("message", receiveMessage, false);
+        })}";
         
-        console.log("Sending initial message to window.opener");
-        window.opener.postMessage("authorizing:${provider}", "*");
+        console.log("Sending token to parent window");
+        
+        if (window.opener) {
+            window.opener.postMessage(message, "*");
+            // Optional: wait a moment before closing to ensure message is sent
+            setTimeout(() => {
+                window.close();
+            }, 1000);
+        } else {
+            console.error("No window.opener found! Are you running this in a popup?");
+        }
         `;
 
         const html = `<!DOCTYPE html>
