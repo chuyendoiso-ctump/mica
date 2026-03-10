@@ -10,9 +10,7 @@ const NewsTile = ({ slug, landscape = false }) => {
     if (!content) return "";
 
     const cleanText = content
-      .replace(/!\[.*?\]\(.*?\)/g, "")
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-      .replace(/[#>*_`~-]/g, " ")
+      .replace(/<\/?[^>]+(>|$)/g, "") // remove html tags
       .replace(/\n/g, " ")
       .replace(/\s+/g, " ")
       .trim();
