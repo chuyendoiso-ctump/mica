@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/2.jpg
+image: public/images/uploads/2.jpg
 date: 2026-03-14T06:58:00.000+07:00
 tag:
   - Tim mạch can thiệp
