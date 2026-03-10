@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: https://github.com/chuyendoiso-ctump/mica.git
   branch: main
 
 media_folder: "images/uploads"
