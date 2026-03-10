@@ -1,5 +1,5 @@
 ---
-image: images/uploads/screenshot-2026-03-10-172310.png
+image: /images/uploads/screenshot-2026-03-10-172310.png
 date: 2026-03-10T17:13:00.000+07:00
 tag:
   - Hội nghị Khoa học
