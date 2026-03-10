@@ -4,8 +4,6 @@ import Footer from "components/Footer";
 import Section from "components/Section";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 const PostPage = () => {
   const [news, setNews] = useState(null);
@@ -135,9 +133,7 @@ const PostPage = () => {
           </div>
 
           <div className="mt-4 page-content">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {content}
-            </ReactMarkdown>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
 
             <div className="tags text-end">
               Từ khóa:

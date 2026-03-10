@@ -8,6 +8,58 @@
 
 <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        var TinyMCEControl = createClass({
+            componentDidMount: function () {
+                var self = this;
+                tinymce.init({
+                    selector: '#' + this.props.forID,
+                    height: 500,
+                    menubar: true,
+                    plugins: [
+                        'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                        'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                        'insertdatetime', 'media', 'table', 'wordcount'
+                    ],
+                    toolbar: 'undo redo | blocks | ' +
+                        'bold italic backcolor forecolor | alignleft aligncenter ' +
+                        'alignright alignjustify | bullist numlist outdent indent | ' +
+                        'image table link | removeformat',
+                    setup: function (editor) {
+                        editor.on('change keyup', function () {
+                            self.props.onChange(editor.getContent());
+                        });
+                        editor.on('init', function () {
+                            if (self.props.value) {
+                                editor.setContent(self.props.value);
+                            }
+                        });
+                    }
+                });
+            },
+            componentWillUnmount: function () {
+                tinymce.remove('#' + this.props.forID);
+            },
+            render: function () {
+                return h('textarea', {
+                    id: this.props.forID,
+                    className: this.props.classNameWrapper,
+                    defaultValue: this.props.value
+                });
+            }
+        });
+
+        var TinyMCEPreview = createClass({
+            render: function () {
+                return h('div', {
+                    dangerouslySetInnerHTML: { __html: this.props.value }
+                });
+            }
+        });
+
+        CMS.registerWidget('tinymce', TinyMCEControl, TinyMCEPreview);
+    </script>
 </body>
 
 </html>
