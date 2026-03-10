@@ -2,7 +2,7 @@
     "name": "freelance-web-ilc",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://tuquyen11.github.io/MekongMedical",
+    "homepage": "https://chuyendoiso-ctump.github.io/mica",
     "dependencies": {
         "@eslint/compat": "^1.2.6",
         "@strapi/blocks-react-renderer": "^1.0.2",
