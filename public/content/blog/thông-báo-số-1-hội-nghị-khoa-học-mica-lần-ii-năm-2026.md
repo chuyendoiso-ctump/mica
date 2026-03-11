@@ -1,6 +1,6 @@
 ---
 image: /images/uploads/20260311_mica_2026_bg.jpg
-date: 2025-03-08T09:00:00.000+07:00
+date: 2026-03-08T09:00:00.000+07:00
 tag:
   - Cần Thơ
   - Tim mạch can thiệp
@@ -8,13 +8,13 @@ tag:
   - MICA Mekong
 title: Thông báo số 1 - Hội Nghị Khoa Học MICA Lần II Năm 2026
 ---
-<!-- LỜI NGỎ -->
+<div style="font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333333; max-width: 900px; margin: 0 auto; padding: 15px;"><!-- LỜI NGỎ -->
 <div style="margin-bottom: 30px; text-align: justify;">
 <p>Chi hội Tim mạch Can thiệp Mekong (MICA) tr&acirc;n trọng th&ocirc;ng b&aacute;o tổ chức <strong>Hội nghị Tim mạch Can thiệp Mekong lần II &ndash; năm 2026</strong>, nhằm tạo diễn đ&agrave;n khoa học chuy&ecirc;n s&acirc;u để trao đổi học thuật, cập nhật kiến thức mới v&agrave; chia sẻ kinh nghiệm thực h&agrave;nh trong lĩnh vực tim mạch can thiệp v&agrave; c&aacute;c chuy&ecirc;n ng&agrave;nh li&ecirc;n quan.</p>
 </div>
-<div style="font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333333; max-width: 900px; margin: 0 auto; padding: 15px;"><!-- PHẦN ĐẦU (HEADER) -->
+<!-- PHẦN ĐẦU (HEADER) -->
 <div style="text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #1e3a8a;">
-<p style="font-size: 18px; font-style: italic; color: rgb(30, 58, 138); font-weight: bold; text-align: left;">Chủ đề: "Những tiến triển v&agrave; th&aacute;ch thức trong Tim mạch hiện đại"</p>
+<p style="font-size: 18px; font-style: italic; color: #1e3a8a; font-weight: bold;">Chủ đề: "Những tiến triển v&agrave; th&aacute;ch thức trong Tim mạch hiện đại"</p>
 <p style="font-size: 16px; background-color: #eff6ff; display: inline-block; padding: 10px 20px; border-radius: 5px; border: 1px solid #cce3fd;"><strong>Thời gian:</strong> Thứ Bảy, 16/05/2026 &nbsp;|&nbsp; <strong>Địa điểm:</strong> TP. Cần Thơ &nbsp;|&nbsp; <strong>H&igrave;nh thức:</strong> Trực tiếp</p>
 </div>
 <!-- CHƯƠNG TRÌNH HỘI NGHỊ -->
@@ -59,16 +59,23 @@ title: Thông báo số 1 - Hội Nghị Khoa Học MICA Lần II Năm 2026
 <td>Live case in a box 1: Image-guided Complex PCI</td>
 <td>&nbsp;</td>
 </tr>
+<tr>
+<td style="font-weight: bold; text-align: center;">Phi&ecirc;n 3</td>
+<td>Điều trị to&agrave;n diện suy tim theo hướng tiếp cận mới</td>
+<td>Kỷ nguy&ecirc;n b&oacute;ng phủ thuốc trong can thiệp mạch v&agrave;nh</td>
+<td>Live case: Complex PCI</td>
+<td>Những ca can thiệp cho người mới bắt đầu</td>
+</tr>
 <tr style="background-color: #fff7ed;">
-<td style="font-weight: bold; color: #c2410c; text-align: center;">Phi&ecirc;n 3</td>
-<td style="font-weight: bold; color: #c2410c; text-align: center;" colspan="4">LUNCH SYMPOSIUM</td>
+<td style="font-weight: bold; color: #c2410c; text-align: center;">LUNCH SYMPOSIUM</td>
+<td style="font-weight: bold; color: #c2410c; text-align: center;" colspan="4">Tiếp cận sớm trong quản l&yacute; bệnh tim - thận - chuyển h&oacute;a<br><br>Xu hướng mới trong can thiệp tim mạch</td>
 </tr>
 <tr>
 <td style="font-weight: bold; text-align: center;">Phi&ecirc;n 4</td>
-<td>Điều trị to&agrave;n diện suy tim theo hướng tiếp cận mới<br><br>Đ&aacute;i th&aacute;o đường: nguy cơ tim mạch v&agrave; can thiệp sớm</td>
-<td>Kỷ nguy&ecirc;n b&oacute;ng phủ thuốc trong can thiệp mạch v&agrave;nh<br><br>Tiếp cận sớm trong quản l&yacute; bệnh tim - thận - chuyển h&oacute;a</td>
-<td>Live case: Complex PCI<br><br>Xu hướng mới trong can thiệp tim mạch ngoại bi&ecirc;n hiện đại</td>
-<td>Can thiệp mạch m&aacute;u | TAVI: những điều cần cập nhật<br><br>Những ca can thiệp cho người mới bắt đầu</td>
+<td>Tim mạch - Đ&aacute;i th&aacute;o đường: nguy cơ tim mạch v&agrave; can thiệp sớm</td>
+<td>Can thiệp mạch m&aacute;u ngoại bi&ecirc;n hiện đại</td>
+<td>TAVI: những điều cần cập nhật</td>
+<td>&nbsp;</td>
 </tr>
 <tr>
 <td style="font-weight: bold; text-align: center;">Phi&ecirc;n 5</td>
