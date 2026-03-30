@@ -41,33 +41,33 @@ const EventPage = () => {
         }
     }, [event]);
 
-    // 2. Thêm useEffect mới này để "đánh thức" các thẻ <script>
+    // Đoạn mã TỰ ĐỘNG load file JS từ thư mục public dựa trên ID của sự kiện
     useEffect(() => {
-        // Chỉ chạy khi đã tải xong dữ liệu và đã có DOM
         if (!loading && contentRef.current) {
-            // Tìm tất cả các thẻ script bên trong nội dung JSON
-            const scripts = contentRef.current.getElementsByTagName('script');
+            const scriptId = `event-script-${id}`;
             
-            // Chuyển đổi thành mảng để duyệt an toàn
-            Array.from(scripts).forEach((oldScript) => {
-                // Tạo một thẻ script mới tinh
-                const newScript = document.createElement('script');
+            // Nếu chưa có thẻ script này trên trang thì mới tạo mới
+            if (!document.getElementById(scriptId)) {
+                const script = document.createElement('script');
+                script.id = scriptId;
+                // Trỏ đúng vào đường dẫn trong thư mục public của bạn
+                script.src = `/json/events/eventScripts/event_${id}.js`;
+                script.async = true;
                 
-                // Sao chép toàn bộ các thuộc tính (như src="https://cdn.tailwindcss.com")
-                Array.from(oldScript.attributes).forEach((attr) => {
-                    newScript.setAttribute(attr.name, attr.value);
-                });
-                
-                // Sao chép nội dung code JavaScript bên trong
-                newScript.appendChild(document.createTextNode(oldScript.innerHTML));
-                
-                // Thay thế thẻ script cũ "đóng băng" bằng thẻ mới để trình duyệt thực thi
-                if (oldScript.parentNode) {
-                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                // Gắn thẻ script vào body để trình duyệt tải và thực thi
+                // Nếu sự kiện không có file JS (ví dụ event 1, 2), trình duyệt sẽ tự động bỏ qua (báo 404 ngầm) mà không gây sập web.
+                document.body.appendChild(script);
+            }
+
+            // Dọn dẹp: Xóa thẻ script khi người dùng rời khỏi trang sự kiện này
+            return () => {
+                const existingScript = document.getElementById(scriptId);
+                if (existingScript) {
+                    document.body.removeChild(existingScript);
                 }
-            });
+            };
         }
-    }, [loading, content]); // Effect này chạy lại mỗi khi nội dung thay đổi
+    }, [loading, content, id]);
 
     return (
         <>
