@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useEffect, useState, useRef } from 'react';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -41,31 +42,63 @@ const EventPage = () => {
         }
     }, [event]);
 
-    // Đoạn mã TỰ ĐỘNG load file JS từ thư mục public dựa trên ID của sự kiện
+    // Đoạn mã TỰ ĐỘNG load file JS bằng FETCH
     useEffect(() => {
-        if (!loading && contentRef.current) {
+        // --- THÊM LOG ĐỂ KIỂM TRA TÌNH TRẠNG THỰC TẾ ---
+        console.log("👉 Đang kiểm tra điều kiện chạy JS:", { 
+            id: id, 
+            isLoading: loading, 
+            hasContent: Boolean(content) 
+        });
+
+        // Chỉ cần hết loading và có dữ liệu content là chạy, không phụ thuộc vào contentRef nữa
+        if (!loading && content) {
             const scriptId = `event-script-${id}`;
             
-            // Nếu chưa có thẻ script này trên trang thì mới tạo mới
-            if (!document.getElementById(scriptId)) {
-                const script = document.createElement('script');
-                script.id = scriptId;
-                // Trỏ đúng vào đường dẫn trong thư mục public của bạn
-                script.src = `/json/events/eventScripts/event_${id}.js`;
-                script.async = true;
-                
-                // Gắn thẻ script vào body để trình duyệt tải và thực thi
-                // Nếu sự kiện không có file JS (ví dụ event 1, 2), trình duyệt sẽ tự động bỏ qua (báo 404 ngầm) mà không gây sập web.
-                document.body.appendChild(script);
-            }
+            const fetchAndRunScript = async () => {
+                try {
+                    console.log(`🔄 Bắt đầu tải script từ server cho sự kiện ${id}...`);
+                    
+                    // Thêm process.env.PUBLIC_URL để chắc chắn đường dẫn đúng trên mọi cấu hình React
+                    const fetchUrl = `${process.env.PUBLIC_URL || ''}/json/events/eventScripts/event_${id}.js`;
+                    const response = await fetch(fetchUrl);
+                    const scriptText = await response.text();
+                    
+                    // Nếu dữ liệu trả về bị sai (chứa thẻ HTML hoặc <noscript>) do sai đường dẫn
+                    if (scriptText.includes('<noscript>') || scriptText.trim().startsWith('<')) {
+                        console.log(`⚠️ Trình duyệt trả về HTML thay vì JS. Không tìm thấy file tại: ${fetchUrl}`);
+                        return;
+                    }
 
-            // Dọn dẹp: Xóa thẻ script khi người dùng rời khỏi trang sự kiện này
+                    // Xóa script cũ đi (nếu có) để đảm bảo code JS được chạy lại từ đầu
+                    const existingScript = document.getElementById(scriptId);
+                    if (existingScript) {
+                        existingScript.remove();
+                    }
+
+                    // Tạo thẻ script mới để trình duyệt thực thi ngay
+                    const script = document.createElement('script');
+                    script.id = scriptId;
+                    script.text = scriptText; 
+                    document.body.appendChild(script);
+                    
+                    console.log(`✅ Đã load và CHẠY thành công script cho sự kiện ${id}`);
+                } catch (error) {
+                    console.log('❌ Lỗi khi fetch script sự kiện:', error);
+                }
+            };
+
+            fetchAndRunScript();
+
+            // Dọn dẹp: Xóa thẻ script khi người dùng rời khỏi trang
             return () => {
                 const existingScript = document.getElementById(scriptId);
                 if (existingScript) {
-                    document.body.removeChild(existingScript);
+                    existingScript.remove();
                 }
             };
+        } else {
+            console.log("⏳ Chưa đủ điều kiện chạy JS. Đang chờ dữ liệu content tải xong...");
         }
     }, [loading, content, id]);
 
