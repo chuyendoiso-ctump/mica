@@ -9,6 +9,9 @@ const EventPage = () => {
     const [event, setEvent] = useState({});
     const [loading, setLoading] = useState(true);
 
+    // 1. Thêm useRef để tạo tham chiếu đến thẻ div chứa nội dung
+    const contentRef = useRef(null);
+
     let params = useParams();
     const id = params.id;
 
@@ -37,6 +40,34 @@ const EventPage = () => {
             setLoading(false);
         }
     }, [event]);
+
+    // 2. Thêm useEffect mới này để "đánh thức" các thẻ <script>
+    useEffect(() => {
+        // Chỉ chạy khi đã tải xong dữ liệu và đã có DOM
+        if (!loading && contentRef.current) {
+            // Tìm tất cả các thẻ script bên trong nội dung JSON
+            const scripts = contentRef.current.getElementsByTagName('script');
+            
+            // Chuyển đổi thành mảng để duyệt an toàn
+            Array.from(scripts).forEach((oldScript) => {
+                // Tạo một thẻ script mới tinh
+                const newScript = document.createElement('script');
+                
+                // Sao chép toàn bộ các thuộc tính (như src="https://cdn.tailwindcss.com")
+                Array.from(oldScript.attributes).forEach((attr) => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+                
+                // Sao chép nội dung code JavaScript bên trong
+                newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+                
+                // Thay thế thẻ script cũ "đóng băng" bằng thẻ mới để trình duyệt thực thi
+                if (oldScript.parentNode) {
+                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                }
+            });
+        }
+    }, [loading, content]); // Effect này chạy lại mỗi khi nội dung thay đổi
 
     return (
         <>
