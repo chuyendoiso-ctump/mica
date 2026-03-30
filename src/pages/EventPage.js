@@ -49,7 +49,7 @@ const EventPage = () => {
                             <div
                                 style={{
                                     backgroundImage: `url(/event/${id}.webp)`,
-                                    backgroundSize: '100%',
+                                    backgroundSize: '100% 100%',
                                     width: '100%',
                                     aspectRatio: '800/300',
                                 }}
