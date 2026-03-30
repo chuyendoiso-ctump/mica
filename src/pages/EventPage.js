@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Section from 'components/Section';
@@ -10,9 +10,7 @@ const EventPage = () => {
     const [event, setEvent] = useState({});
     const [loading, setLoading] = useState(true);
 
-    // 1. Thêm useRef để tạo tham chiếu đến thẻ div chứa nội dung
-    const contentRef = useRef(null);
-
+    
     let params = useParams();
     const id = params.id;
 
