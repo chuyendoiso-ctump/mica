@@ -106,6 +106,11 @@
         </div>
     `;
 
+    const htmlMauSlide = `<div class="ribbon-title">Mẫu Slide</div>
+                            <div class="mica-content-wrapper">
+                                <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='/files/Template MICA 2026.pptx'> Tải mẫu Slide báo cáo</a></div>
+                            </div>`;
+
     function renderMenu() {
         const menuList = document.getElementById('mica-menu-list');
         if (!menuList) return;
@@ -138,6 +143,9 @@
 
         if (activeMenuId === 'tong-quan') {
             mainContent.innerHTML = htmlTongQuan;
+        }
+        else if(activeMenuId === 'mau-slide') {
+            mainContent.innerHTML = htmlMauSlide;
         } else {
             const currentMenu = menus.find(m => m.id === activeMenuId);
             mainContent.innerHTML = `
