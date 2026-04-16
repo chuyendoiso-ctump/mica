@@ -20,7 +20,8 @@
     const hallInfo = {
         'can-tho': { name: 'HT Cần Thơ', color: '#1d4ed8', bg: '#dbeafe', border: '#bfdbfe' }, // Xanh dương
         'hau-giang': { name: 'HT Hậu Giang', color: '#047857', bg: '#d1fae5', border: '#a7f3d0' }, // Xanh lá
-        'soc-trang': { name: 'HT Sóc Trăng', color: '#b45309', bg: '#fef3c7', border: '#fde68a' }  // Vàng cam
+        'soc-trang': { name: 'HT Sóc Trăng', color: '#b45309', bg: '#fef3c7', border: '#fde68a' },  // Vàng cam
+        'goc-giao-luu-mica': { name: 'Góc giao lưu MICA', color: '#a609b4ff', bg: '#fef3c7', border: '#fde68a' }  // Vàng cam
     };
 
     // Dữ liệu chi tiết trích xuất từ CSV
@@ -907,6 +908,7 @@
                 <button onclick="window.setHall('can-tho')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'can-tho' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Cần Thơ</button>
                 <button onclick="window.setHall('hau-giang')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'hau-giang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Hậu Giang</button>
                 <button onclick="window.setHall('soc-trang')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'soc-trang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Sóc Trăng</button>
+                <button onclick="window.setHall('goc-giao-luu-mica')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'soc-trang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">Góc giao lưu MICA</button>
             </div>
         `;
 
