@@ -13,6 +13,181 @@
     ];
 
     let activeMenuId = 'tong-quan';
+    let activeHall = 'all'; // Đổi mặc định thành "Tất cả" khi vào chương trình chi tiết
+    let searchQuery = '';   // Biến lưu trữ từ khóa tìm kiếm
+
+    // Thông tin màu sắc và tên hiển thị cho các thẻ Nhãn (Badge) định vị
+    const hallInfo = {
+        'can-tho': { name: 'HT Cần Thơ', color: '#1d4ed8', bg: '#dbeafe', border: '#bfdbfe' }, // Xanh dương
+        'hau-giang': { name: 'HT Hậu Giang', color: '#047857', bg: '#d1fae5', border: '#a7f3d0' }, // Xanh lá
+        'soc-trang': { name: 'HT Sóc Trăng', color: '#b45309', bg: '#fef3c7', border: '#fde68a' }  // Vàng cam
+    };
+
+    // Dữ liệu chi tiết trích xuất từ CSV
+    const detailedData = {
+        'can-tho': [
+            {
+                time: '08:30 - 10:00',
+                title: 'KỶ NGUYÊN BÓNG PHỦ THUỐC TRONG CAN THIỆP MẠCH VÀNH',
+                chairs: 'PGs.Ts. Hồ Thượng Dũng - Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Phạm Mạnh Hùng',
+                talks: [
+                    { time: '08:30 - 08:42', topic: 'Xu hướng chẩn đoán điều trị tăng huyết áp 2026', speaker: 'PGS.TS.BS. Trần Văn Huy' },
+                    { time: '08:42 - 08:54', topic: 'Thuốc ức chế SGLT2: Cập nhật chiến lược bảo vệ tim - thận', speaker: 'TS.BS. Nguyễn Văn Tân' },
+                    { time: '08:54 - 09:06', topic: 'Vai trò của IVUS trong can thiệp động mạch vành phức tạp', speaker: 'PGs.Ts. Đỗ Văn Chiến' }
+                ]
+            },
+            {
+                time: '10:30 - 12:00',
+                title: 'QUẢN LÝ TOÀN DIỆN HỘI CHỨNG VÀNH CẤP',
+                chairs: 'Gs.Ts. Võ Thành Nhân - TS.BS. Chu Dũng Quyết',
+                talks: [
+                    { time: '10:30 - 10:45', topic: 'Dự phòng suy tim sau nhồi máu cơ tim', speaker: 'PGS.TS. Hoàng Văn Sỹ' },
+                    { time: '10:45 - 11:00', topic: 'Tối ưu hóa kháng kết tập tiểu cầu', speaker: 'TS.BS. Trương Phi Hùng' }
+                ]
+            }
+        ],
+        'hau-giang': [
+            {
+                time: '08:30 - 09:53',
+                title: 'ĐÁNH GIÁ NGUY CƠ SỚM ĐẾN KIỂM SOÁT NGUY CƠ TỒN DƯ',
+                chairs: 'PGs.Ts. Nguyễn Văn Trí - PGs.Ts. Trần Kim Trang',
+                talks: [
+                    { time: '08:30 - 08:42', topic: 'Quản lý Lipid máu ở bệnh nhân nguy cơ rất cao', speaker: 'ThS.BS. Lê Minh Thắng' },
+                    { time: '08:42 - 08:54', topic: 'Vị trí của chẹn beta trong quản lý hội chứng vành mạn', speaker: 'BsCKII. Phạm Thanh Phong' }
+                ]
+            }
+        ],
+        'soc-trang': [
+            {
+                time: '08:30 - 09:46',
+                title: 'VAI TRÒ CAN THIỆP SỚM ĐỂ CẢI THIỆN TIÊN LƯỢNG',
+                chairs: 'Gs.Ts. Trương Quang Bình - PGs.Ts. Nguyễn Ngọc Quang',
+                talks: [
+                    { time: '08:30 - 08:45', topic: 'Can thiệp thân chung động mạch vành trái', speaker: 'TS.BS. Vũ Hoàng Vũ' }
+                ]
+            }
+        ]
+    };
+
+    // Hàm tô màu chữ (highlight) khi tìm kiếm
+    function highlightText(text, query) {
+        if (!query || query.trim() === '') return text;
+        // Thoát các ký tự đặc biệt trong Regex để tránh lỗi
+        const escapedQuery = query.trim().replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+        const regex = new RegExp(`(${escapedQuery})`, 'gi');
+        return text.replace(regex, '<mark style="background-color: #fef08a; padding: 0 2px; border-radius: 2px; color: #1f2937;">$1</mark>');
+    }
+
+    // Hàm chỉ render lại các Tabs và Nội dung danh sách (để không làm mất focus thanh tìm kiếm)
+    function updateChiTietView() {
+        const tabsContainer = document.getElementById('mica-hall-tabs');
+        const listContainer = document.getElementById('mica-sessions-list');
+
+        if (!tabsContainer || !listContainer) return;
+
+        // 1. Cập nhật giao diện Tabs
+        tabsContainer.innerHTML = `
+            <div style="display: flex; gap: 10px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; -ms-overflow-style: none;">
+                <button onclick="window.setHall('all')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'all' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">Tất cả hội trường</button>
+                <button onclick="window.setHall('can-tho')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'can-tho' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Cần Thơ</button>
+                <button onclick="window.setHall('hau-giang')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'hau-giang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Hậu Giang</button>
+                <button onclick="window.setHall('soc-trang')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'soc-trang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Sóc Trăng</button>
+            </div>
+        `;
+
+        // 2. Xử lý logic dữ liệu (Gom hội trường)
+        let displaySessions = [];
+        if (activeHall === 'all') {
+            Object.keys(detailedData).forEach(key => {
+                detailedData[key].forEach(session => {
+                    displaySessions.push({ ...session, hallKey: key });
+                });
+            });
+            displaySessions.sort((a, b) => a.time.localeCompare(b.time));
+        } else {
+            displaySessions = (detailedData[activeHall] || []).map(s => ({ ...s, hallKey: activeHall }));
+        }
+
+        // 3. Xử lý LỌC TÌM KIẾM (Search Filter)
+        if (searchQuery.trim() !== '') {
+            const query = searchQuery.trim().toLowerCase();
+
+            displaySessions = displaySessions.reduce((acc, session) => {
+                // Kiểm tra xem tiêu đề phiên hoặc danh sách chủ tọa có chứa từ khóa không
+                const isTitleMatch = session.title.toLowerCase().includes(query);
+                const isChairsMatch = session.chairs.toLowerCase().includes(query);
+
+                // Lọc riêng các bài báo cáo (talks) có chứa từ khóa (ở chủ đề hoặc diễn giả)
+                const matchedTalks = session.talks.filter(talk =>
+                    talk.topic.toLowerCase().includes(query) ||
+                    talk.speaker.toLowerCase().includes(query)
+                );
+
+                if (isTitleMatch || isChairsMatch) {
+                    // Nếu tìm trúng tên Phiên hoặc Chủ tọa -> Giữ nguyên toàn bộ bài báo cáo bên trong
+                    acc.push(session);
+                } else if (matchedTalks.length > 0) {
+                    // Nếu tìm trúng Diễn giả/Bài cụ thể -> Chỉ hiển thị Phiên đó với các bài được tìm thấy
+                    acc.push({ ...session, talks: matchedTalks });
+                }
+
+                return acc;
+            }, []);
+        }
+
+        // 4. Render danh sách ra HTML
+        if (displaySessions.length === 0) {
+            listContainer.innerHTML = `
+                <div style="text-align: center; padding: 40px; color: #6b7280; background: white; border-radius: 8px; border: 1px dashed #cbd5e1; margin-top: 20px;">
+                    <svg style="width: 48px; height: 48px; margin: 0 auto 16px auto; color: #9ca3af;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p style="margin: 0; font-size: 16px;">Không tìm thấy kết quả nào phù hợp.</p>
+                </div>
+            `;
+            return;
+        }
+
+        listContainer.innerHTML = displaySessions.map(session => {
+            const hall = hallInfo[session.hallKey];
+            return `
+            <div style="background: white; border-radius: 8px; border: 1px solid #e5e7eb; margin-bottom: 20px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="background: #1e3a8a; color: white; padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <div style="font-size: 13px; opacity: 0.9; display: flex; align-items: center; gap: 4px;">
+                            <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                            ${session.time}
+                        </div>
+                        <span style="background: ${hall.bg}; color: ${hall.color}; border: 1px solid ${hall.border}; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold;">
+                            📍 ${hall.name}
+                        </span>
+                    </div>
+                    <div style="font-weight: bold; font-size: 16px; line-height: 1.4;">${highlightText(session.title, searchQuery)}</div>
+                </div>
+
+                <div style="padding: 12px 16px; border-bottom: 1px solid #f3f4f6; background: #f8fafc;">
+                    <span style="font-weight: bold; font-size: 13px; color: #64748b;">CHỦ TỌA:</span>
+                    <span style="font-size: 13px; color: #1e293b;">${highlightText(session.chairs, searchQuery)}</span>
+                </div>
+
+                <div style="padding: 0 16px;">
+                    ${session.talks.map(talk => `
+                        <div style="display: flex; padding: 12px 0; border-bottom: 1px solid #f3f4f6; gap: 15px; align-items: flex-start;">
+                            <div style="min-width: 90px; color: #ef4444; font-weight: 500; font-size: 13px;">${talk.time}</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; color: #1f2937; margin-bottom: 4px; line-height: 1.4;">${highlightText(talk.topic, searchQuery)}</div>
+                                <div style="font-size: 13px; color: #6b7280;">Báo cáo viên: <span style="color: #3b82f6; font-weight: 500;">${highlightText(talk.speaker, searchQuery)}</span></div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `}).join('');
+    }
+
+    // Hàm global để nút bấm chọn Tab Hội trường gọi được
+    window.setHall = (hallId) => {
+        activeHall = hallId;
+        updateChiTietView(); // Cập nhật lại view mà không làm mất text trong ô search
+    };
 
     const htmlTongQuan = `
         <div class="ribbon-title">Chương trình tổng quan</div>
@@ -143,8 +318,42 @@
 
         if (activeMenuId === 'tong-quan') {
             mainContent.innerHTML = htmlTongQuan;
-        }
-        else if (activeMenuId === 'mau-slide') {
+        } else if (activeMenuId === 'chi-tiet') {
+            searchQuery = ''; // Reset thanh tìm kiếm khi mới nhấn vào menu "Chương trình chi tiết"
+
+            // Dựng khung layout chứa ô tìm kiếm (Không bị ghi đè lại khi gõ chữ)
+            mainContent.innerHTML = `
+                <div class="ribbon-title">Chương trình chi tiết</div>
+                <div style="padding: 0 16px 40px 16px;">
+                    <!-- Thanh Tìm Kiếm -->
+                    <div style="margin-bottom: 16px; position: relative;">
+                        <svg style="position: absolute; left: 14px; top: 12px; width: 18px; height: 18px; color: #9ca3af;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        <input type="text" id="mica-search-input" placeholder="Tìm diễn giả, bài báo cáo, chủ tọa..." autocomplete="off" style="width: 100%; padding: 10px 16px 10px 40px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 14px; outline: none; box-sizing: border-box; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: border-color 0.2s;">
+                    </div>
+                    
+                    <!-- Khung chứa Tabs -->
+                    <div id="mica-hall-tabs"></div>
+                    
+                    <!-- Khung chứa Danh sách kết quả -->
+                    <div id="mica-sessions-list"></div>
+                </div>
+            `;
+
+            // Gắn sự kiện (Event Listener) cho ô input tìm kiếm
+            const searchInput = document.getElementById('mica-search-input');
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                updateChiTietView(); // Cập nhật lại kết quả tìm kiếm ngay lập tức
+            });
+
+            // Hiệu ứng đổi màu viền khi click vào ô search
+            searchInput.addEventListener('focus', () => searchInput.style.borderColor = '#3b82f6');
+            searchInput.addEventListener('blur', () => searchInput.style.borderColor = '#cbd5e1');
+
+            // Hiển thị nội dung ban đầu
+            updateChiTietView();
+
+        } else if (activeMenuId === 'mau-slide') {
             mainContent.innerHTML = htmlMauSlide;
         } else {
             const currentMenu = menus.find(m => m.id === activeMenuId);
