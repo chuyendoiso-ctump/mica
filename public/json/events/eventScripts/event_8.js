@@ -73,20 +73,13 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 4</td>
-                                <td>Tim mạch - Đái tháo đường: nguy cơ tim mạch và can thiệp sớm</td>
-                                <td>Can thiệp mạch máu ngoại biên hiện đại</td>
-                                <td>TAVI: những điều cần cập nhật</td>
-                                <td style="background-color: #f9fafb;"></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 5</td>
                                 <td>Tiếp cận toàn diện tổn thương MV vôi hóa nặng</td>
                                 <td style="background-color: #f9fafb;"></td>
                                 <td>Can thiệp bệnh tim cấu trúc: xu hướng cập nhật</td>
                                 <td>Nghiên cứu khoa học</td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 5</td>
                                 <td>Live case in a box: Calcified lesions</td>
                                 <td>Hội chứng tim – thận – chuyển hóa: tiếp cận tích hợp và điều trị toàn diện</td>
                                 <td>Can thiệp van và động mạch chủ: cập nhật và kinh nghiệm thực tiễn</td>
@@ -100,7 +93,7 @@
                                 <td style="background-color: #f9fafb;"></td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 7</td>
                                 <td>Live case in a box: Image-guided complex PCI</td>
                                 <td>Tiếp cận toàn diện yếu tố ngoài tim mạch ảnh hưởng đến kết cục tim mạch</td>
                                 <td style="background-color: #f9fafb;"></td>
