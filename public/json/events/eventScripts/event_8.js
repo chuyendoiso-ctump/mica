@@ -1,4 +1,4 @@
-(function() {
+(function () {
     const micaComponent = document.getElementById('mica-program-component');
     if (!micaComponent) return;
 
@@ -26,7 +26,7 @@
                                 <th style="background-color: #fed7aa; width: 25%; text-align: center;">Hội Trường Cần Thơ</th>
                                 <th style="background-color: #fef08a; width: 25%; text-align: center;">Hội Trường Hậu Giang</th>
                                 <th style="background-color: #bbf7d0; width: 25%; text-align: center;">Hội Trường Sóc Trăng</th>
-                                <th style="background-color: #bfdbfe; width: 15%; text-align: center;">Coffee Corner</th>
+                                <th style="background-color: #bfdbfe; width: 15%; text-align: center;">Góc Giao Lưu MICA</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -52,31 +52,24 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 1</td>
-                                <td>Quản lý toàn diện Hội chứng vành cấp</td>
-                                <td>Cập nhật vai trò hình ảnh học nội mạch trong PCI: IVUS, IVUS-NIRS và OCT</td>
-                                <td>Live case in a box 2: Calcified lesions</td>
-                                <td>Xử trí biến chứng trong PCI phức tạp</td>
+                                <td>Kỷ nguyên bóng phủ thuốc trong can thiệp mạch vành</td>
+                                <td>Đánh giá nguy cơ sớm đến kiểm soát nguy cơ tồn dư</td>
+                                <td>Vai trò can thiệp sớm để cải thiện tiên lượng hội chứng tim - thận - chuyển hóa</td>
+                                <td>Tối ưu hóa điều trị: góc nhìn từ quản lý bệnh viện đến hệ thống y tế</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 2</td>
-                                <td>Chiến lược điều trị toàn diện Hội chứng vành mạn</td>
-                                <td>Tiếp cận toàn diện tổn thương MV vôi hóa nặng: CB, Rota, IVL shock wave, IVL- mechanical</td>
-                                <td>Live case in a box 1: Image-guided Complex PCI</td>
-                                <td style="background-color: #f9fafb;"></td>
+                                <td>Chiến lược can thiệp sang thương phức tạp</td>
+                                <td>Tiếp cận mới tăng huyết áp và yếu tố nguy cơ</td>
+                                <td>Can thiệp CTO: khi nào, bằng cách nào?</td>
+                                <td>Từ khuyến cáo đến ca lâm sàng</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 3</td>
-                                <td>Điều trị toàn diện suy tim theo hướng tiếp cận mới</td>
-                                <td>Kỷ nguyên bóng phủ thuốc trong can thiệp mạch vành</td>
-                                <td>Live case: Complex PCI</td>
-                                <td>Những ca can thiệp cho người mới bắt đầu</td>
-                            </tr>
-                            <tr style="background-color: #fff7ed;">
-                                <td style="font-weight: bold; color: #c2410c; text-align: center; vertical-align: middle;">LUNCH SYMPOSIUM</td>
-                                <td colspan="4" style="text-align: center; font-weight: bold; color: #c2410c; padding: 16px; vertical-align: middle;">
-                                    Tiếp cận sớm trong quản lý bệnh tim - thận - chuyển hóa<br><br>
-                                    Xu hướng mới trong can thiệp tim mạch
-                                </td>
+                                <td>Live case in a box: Complex PCI</td>
+                                <td>Điều trị toàn diện suy tim</td>
+                                <td>Thách thức và chiến lược tối ưu hóa điều trị rung nhĩ</td>
+                                <td>Từ chuẩn bị đến làm chủ can thiệp</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 4</td>
@@ -87,16 +80,30 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 5</td>
-                                <td>Thách thức và chiến lược tối ưu hóa điều trị rung nhĩ</td>
-                                <td>Can thiệp bệnh tim cấu trúc: xu hướng 2026</td>
-                                <td>Can thiệp thân chung và CTO: khi nào, bằng cách nào?</td>
+                                <td>Tiếp cận toàn diện tổn thương MV vôi hóa nặng</td>
+                                <td style="background-color: #f9fafb;"></td>
+                                <td>Can thiệp bệnh tim cấu trúc: xu hướng cập nhật</td>
+                                <td>Nghiên cứu khoa học</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
+                                <td>Live case in a box: Calcified lesions</td>
+                                <td>Hội chứng tim – thận – chuyển hóa: tiếp cận tích hợp và điều trị toàn diện</td>
+                                <td>Can thiệp van và động mạch chủ: cập nhật và kinh nghiệm thực tiễn</td>
                                 <td style="background-color: #f9fafb;"></td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
-                                <td>Tăng huyết áp và yếu tố nguy cơ: tiếp cận mới?</td>
-                                <td>Chiến lược can thiệp sang thương phân nhánh</td>
-                                <td>Can thiệp và kiểm soát rối loạn nhịp</td>
+                                <td>Cập nhật vai trò hình ảnh học nội mạch trong PCI</td>
+                                <td>Điều trị bệnh động mạch vành trong kỷ nguyên đa mục tiêu</td>
+                                <td>Can thiệp mạch máu ngoại biên: định hướng tương lai</td>
+                                <td style="background-color: #f9fafb;"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
+                                <td>Live case in a box: Image-guided complex PCI</td>
+                                <td>Tiếp cận toàn diện yếu tố ngoài tim mạch ảnh hưởng đến kết cục tim mạch</td>
+                                <td style="background-color: #f9fafb;"></td>
                                 <td style="background-color: #f9fafb;"></td>
                             </tr>
                         </tbody>
@@ -114,19 +121,19 @@
     function renderMenu() {
         const menuList = document.getElementById('mica-menu-list');
         if (!menuList) return;
-        menuList.innerHTML = ''; 
+        menuList.innerHTML = '';
 
         menus.forEach(menu => {
             const li = document.createElement('li');
             li.className = menu.id === activeMenuId ? 'menu-active' : '';
-            
+
             // Sử dụng addEventListener (chuẩn của React/JS hiện đại) thay cho onclick
             li.addEventListener('click', () => {
                 activeMenuId = menu.id;
-                renderMenu();    
-                renderContent(); 
+                renderMenu();
+                renderContent();
             });
-            
+
             li.innerHTML = `
                 <span>${menu.label}</span>
                 <svg viewBox="0 0 20 20">
@@ -144,7 +151,7 @@
         if (activeMenuId === 'tong-quan') {
             mainContent.innerHTML = htmlTongQuan;
         }
-        else if(activeMenuId === 'mau-slide') {
+        else if (activeMenuId === 'mau-slide') {
             mainContent.innerHTML = htmlMauSlide;
         } else {
             const currentMenu = menus.find(m => m.id === activeMenuId);
