@@ -121,11 +121,12 @@
                 "time": "11:28 - 12:13",
                 "title": "LIVE CASE IN A BOX: COMPLEX PCI",
                 "chairs": "Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Huỳnh Văn Thưởng - TS. Nguyễn Quốc Thái - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
+                "panelists": 'Ts. Trương Tú Trạch - BsCKII. Huỳnh Quốc Bình',
                 "talks": [
                     {
                         "time": "11:28 - 12:13",
                         "topic": "Bệnh viện Đa khoa Trung Ương Cần Thơ",
-                        "speaker": "BsCKII. Trần Văn Triệu"
+                        "speaker": "BsCKII. Trần Văn Triệu - BsCKI. Dương Hoàng Mẫn"
                     }
                 ]
             },
@@ -174,12 +175,13 @@
             {
                 "time": "13:45 - 14:30",
                 "title": "LIVE CASE IN A BOX: CALCIFIED LESIONS",
-                "chairs": "PGs.Ts. Hồ Thượng Dũng - PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung",
+                "chairs": "PGs.Ts. Hồ Thượng Dũng - PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung - PGs.Ts. Đỗ Văn Chiến",
+                "panelists": 'BsCKII. Đoàn Thanh Tuấn - BsCKII. Trần Trà Giang',
                 "talks": [
                     {
                         "time": "13:45 - 14:30",
                         "topic": "Bệnh viện Đa khoa Sóc Trăng",
-                        "speaker": "TS. Trương Tú Trạch"
+                        "speaker": "TS. Trương Tú Trạch - BsCKII. Lý Ích Trung"
                     }
                 ]
             },
@@ -215,25 +217,31 @@
                     },
                     {
                         "time": "15:36 - 15:48",
+                        "topic": "Vai trò OCT trong hướng dẫn can thiệp tổn thương vôi hóa",
+                        "speaker": "TS. Nguyễn Thế Quyền"
+                    },
+                    {
+                        "time": "15:49 - 16:01",
                         "topic": "Vai trò của IVUS trong biến chứng do can thiệp động mạch vành.",
                         "speaker": "PGs.Ts. Đỗ Văn Chiến"
                     },
                     {
-                        "time": "15:49 - 15:59",
+                        "time": "16:02 - 16:12",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "16:00 - 16:45",
+                "time": "16:15 - 17:00",
                 "title": "LIVE CASE IN A BOX: IMAGE-GUIDED COMPLEX PCI",
                 "chairs": "BsCKII. Lý Ích Trung - TS. Nguyễn Quốc Thái - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
+                "panelists": 'BsCKII. Nguyễn Đỗ Anh - PGs.Ts. Trần Viết An',
                 "talks": [
                     {
-                        "time": "16:00 - 16:45",
+                        "time": "16:15 - 17:00",
                         "topic": "Bệnh viện Đa khoa Kiên Giang",
-                        "speaker": "BsCKII. Lâm Hữu Giang"
+                        "speaker": "BsCKII. Lâm Hữu Giang - ThS. Trần Minh Trung"
                     }
                 ]
             }
@@ -904,11 +912,11 @@
         // 1. Cập nhật giao diện Tabs
         tabsContainer.innerHTML = `
             <div style="display: flex; gap: 10px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; -ms-overflow-style: none;">
-                <button onclick="window.setHall('all')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'all' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">Tất cả hội trường</button>
-                <button onclick="window.setHall('can-tho')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'can-tho' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Cần Thơ</button>
-                <button onclick="window.setHall('hau-giang')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'hau-giang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Hậu Giang</button>
-                <button onclick="window.setHall('soc-trang')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'soc-trang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Sóc Trăng</button>
-                <button onclick="window.setHall('goc-giao-luu-mica')" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'goc-giao-luu-mica' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">Góc giao lưu MICA</button>
+                <button onclick="window.setHall('all')" style="width: 170px; padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'all' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">Tất cả hội trường</button>
+                <button onclick="window.setHall('can-tho')" style="width: 170px; padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'can-tho' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Cần Thơ</button>
+                <button onclick="window.setHall('hau-giang')" style="width: 170px; padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'hau-giang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Hậu Giang</button>
+                <button onclick="window.setHall('soc-trang')" style="width: 170px; padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'soc-trang' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">HT Sóc Trăng</button>
+                <button onclick="window.setHall('goc-giao-luu-mica')" style="width: 170px; padding: 8px 16px; border-radius: 20px; border: 1px solid #3b82f6; cursor: pointer; white-space: nowrap; transition: all 0.2s; outline: none; ${activeHall === 'goc-giao-luu-mica' ? 'background: #3b82f6; color: white; font-weight: bold; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);' : 'background: white; color: #3b82f6;'}">Góc giao lưu MICA</button>
             </div>
         `;
 
@@ -981,8 +989,14 @@
                 </div>
 
                 <div style="padding: 12px 16px; border-bottom: 1px solid #f3f4f6; background: #f8fafc;">
-                    <span style="font-weight: bold; font-size: 13px; color: #64748b;">CHỦ TỌA:</span>
-                    <span style="font-size: 13px; color: #1e293b;">${highlightText(session.chairs, searchQuery)}</span>
+                    <span style="font-weight: bold; font-size: 13px; color: #aa0d0dff;">CHỦ TỌA:</span>
+                    <span style="font-size: 13px; color: #aa0d0dff;">${highlightText(session.chairs, searchQuery)}</span>
+                    ${session.panelists ? `
+                    <div>
+                        <span style="font-weight: bold; font-size: 13px; color: #64748b;">THAM LUẬN:</span>
+                        <span style="font-size: 13px; color: #1e293b;">${highlightText(session.panelists, searchQuery)}</span>
+                    </div>
+                    ` : ''}
                 </div>
 
                 <div style="padding: 0 16px;">
