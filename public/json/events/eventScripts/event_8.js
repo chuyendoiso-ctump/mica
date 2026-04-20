@@ -1022,74 +1022,57 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background-color: #1e3a8a; color: white;">
-                                <td colspan="5" style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px;">Thứ sáu, ngày 15/5/2026 (13-17h)</td>
-                            </tr>
-                            <tr style="background-color: #f9fafb;">
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">-</td>
-                                <td>
-                                    <div style="font-weight: bold;">Báo cáo khoa học</div>
-                                    <div style="color: #4b5563; font-size: 12px;">(Tim mạch)</div>
-                                </td>
-                                <td>
-                                    <div style="font-weight: bold;">Báo cáo khoa học</div>
-                                    <div style="color: #4b5563; font-size: 12px;">(Tim mạch can thiệp)</div>
-                                </td>
-                                <td style="background-color: #f9fafb;"></td>
-                                <td style="background-color: #f9fafb;"></td>
-                            </tr>
-                            
                             <tr style="background-color: #b48600; color: white;">
                                 <td colspan="5" style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px; border-top: 16px solid white;">Thứ bảy, ngày 16/5/2026 (7-17h)</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 1</td>
-                                <td>Kỷ nguyên bóng phủ thuốc trong can thiệp mạch vành</td>
-                                <td>Đánh giá nguy cơ sớm đến kiểm soát nguy cơ tồn dư</td>
-                                <td>Vai trò can thiệp sớm để cải thiện tiên lượng hội chứng tim - thận - chuyển hóa</td>
-                                <td>Tối ưu hóa điều trị: góc nhìn từ quản lý bệnh viện đến hệ thống y tế</td>
+                                <td style="background-color: #fed7aa;">Kỷ nguyên bóng phủ thuốc trong can thiệp mạch vành</td>
+                                <td style="background-color: #fef08a;">Đánh giá nguy cơ sớm đến kiểm soát nguy cơ tồn dư</td>
+                                <td style="background-color: #bbf7d0;">Vai trò can thiệp sớm để cải thiện tiên lượng hội chứng tim - thận - chuyển hóa</td>
+                                <td style="background-color: #bfdbfe;">Tối ưu hóa điều trị: góc nhìn từ quản lý bệnh viện đến hệ thống y tế</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 2</td>
-                                <td>Chiến lược can thiệp sang thương phức tạp</td>
-                                <td>Tiếp cận mới tăng huyết áp và yếu tố nguy cơ</td>
-                                <td>Can thiệp CTO: khi nào, bằng cách nào?</td>
-                                <td>Từ khuyến cáo đến ca lâm sàng</td>
+                                <td style="background-color: #fed7aa;">Chiến lược can thiệp sang thương phức tạp</td>
+                                <td style="background-color: #fef08a;">Tiếp cận mới tăng huyết áp và yếu tố nguy cơ</td>
+                                <td style="background-color: #bbf7d0;">Can thiệp CTO: khi nào, bằng cách nào?</td>
+                                <td style="background-color: #bfdbfe;">Từ khuyến cáo đến ca lâm sàng</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 3</td>
-                                <td>Live case in a box: Complex PCI</td>
-                                <td>Điều trị toàn diện suy tim</td>
-                                <td>Thách thức và chiến lược tối ưu hóa điều trị rung nhĩ</td>
-                                <td>Từ chuẩn bị đến làm chủ can thiệp</td>
+                                <td style="background-color: #fed7aa;">Live case in a box: Complex PCI</td>
+                                <td style="background-color: #fef08a;">Điều trị toàn diện suy tim</td>
+                                <td style="background-color: #bbf7d0;">Thách thức và chiến lược tối ưu hóa điều trị rung nhĩ</td>
+                                <td style="background-color: #bfdbfe;">Từ chuẩn bị đến làm chủ can thiệp</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 4</td>
-                                <td>Tiếp cận toàn diện tổn thương MV vôi hóa nặng</td>
-                                <td style="background-color: #f9fafb;"></td>
-                                <td>Can thiệp bệnh tim cấu trúc: xu hướng cập nhật</td>
-                                <td>Nghiên cứu khoa học</td>
+                                <td style="background-color: #fed7aa;">Tiếp cận toàn diện tổn thương MV vôi hóa nặng</td>
+                                <td style="background-color: #fef08a;"></td>
+                                <td style="background-color: #bbf7d0;">Can thiệp bệnh tim cấu trúc: xu hướng cập nhật</td>
+                                <td style="background-color: #bfdbfe;">Nghiên cứu khoa học</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 5</td>
-                                <td>Live case in a box: Calcified lesions</td>
-                                <td>Hội chứng tim – thận – chuyển hóa: tiếp cận tích hợp và điều trị toàn diện</td>
-                                <td>Can thiệp van và động mạch chủ: cập nhật và kinh nghiệm thực tiễn</td>
-                                <td style="background-color: #f9fafb;"></td>
+                                <td style="background-color: #fed7aa;">Live case in a box: Calcified lesions</td>
+                                <td style="background-color: #fef08a;">Hội chứng tim – thận – chuyển hóa: tiếp cận tích hợp và điều trị toàn diện</td>
+                                <td style="background-color: #bbf7d0;">Can thiệp van và động mạch chủ: cập nhật và kinh nghiệm thực tiễn</td>
+                                <td style="background-color: #bfdbfe;"></td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
-                                <td>Cập nhật vai trò hình ảnh học nội mạch trong PCI</td>
-                                <td>Điều trị bệnh động mạch vành trong kỷ nguyên đa mục tiêu</td>
-                                <td>Can thiệp mạch máu ngoại biên: định hướng tương lai</td>
-                                <td style="background-color: #f9fafb;"></td>
+                                <td style="background-color: #fed7aa;">Cập nhật vai trò hình ảnh học nội mạch trong PCI</td>
+                                <td style="background-color: #fef08a;">Điều trị bệnh động mạch vành trong kỷ nguyên đa mục tiêu</td>
+                                <td style="background-color: #bbf7d0;">Can thiệp mạch máu ngoại biên: định hướng tương lai</td>
+                                <td style="background-color: #bfdbfe;"></td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 7</td>
-                                <td>Live case in a box: Image-guided complex PCI</td>
-                                <td>Tiếp cận toàn diện yếu tố ngoài tim mạch ảnh hưởng đến kết cục tim mạch</td>
-                                <td style="background-color: #f9fafb;"></td>
-                                <td style="background-color: #f9fafb;"></td>
+                                <td style="background-color: #fed7aa;">Live case in a box: Image-guided complex PCI</td>
+                                <td style="background-color: #fef08a;">Tiếp cận toàn diện yếu tố ngoài tim mạch ảnh hưởng đến kết cục tim mạch</td>
+                                <td style="background-color: #bbf7d0;"></td>
+                                <td style="background-color: #bfdbfe;"></td>
                             </tr>
                         </tbody>
                     </table>
