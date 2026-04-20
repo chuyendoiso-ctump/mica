@@ -5,7 +5,7 @@
     const menus = [
         { id: 'tong-quan', label: 'Chương trình tổng quan' },
         { id: 'chi-tiet', label: 'Chương trình chi tiết' },
-        { id: 'tai-tro', label: 'Đơn vị tài trợ' },
+        { id: 'don-vi-tai-tro', label: 'Đơn vị tài trợ' },
         { id: 'ca-lam-sang', label: 'Ca lâm sàng trực tiếp' },
         { id: 'mau-slide', label: 'Mẫu Slide' },
         // { id: 'tai-chuong-trinh', label: 'Tải chương trình' },
@@ -763,7 +763,7 @@
                 "chairs": "",
                 "talks": [
                     {
-                        "time": "09:00 - 10:30\"",
+                        "time": "",
                         "topic": "Bệnh viện Đa khoa Trung Ương Cần Thơ",
                         "speaker": "BsCKII. Phạm Thnah Phong"
                     },
@@ -1101,7 +1101,7 @@
                                 <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='/files/Template MICA 2026.pptx'> Tải mẫu Slide báo cáo</a></div>
                             </div>`;
 
-    const htmlTaiTro = `<img src="/files/don-vi-tai-tro-mica-2026.png" alt="" width="100%">`;
+    const htmlTaiTro = `<img src="/files/don-vi-tai-tro-mica-2026.jpg" alt="" width="100%">`;
 
     function renderMenu() {
         const menuList = document.getElementById('mica-menu-list');
