@@ -941,7 +941,6 @@
                 // Kiểm tra xem tiêu đề phiên hoặc danh sách chủ tọa có chứa từ khóa không
                 const isTitleMatch = session.title.toLowerCase().includes(query);
                 const isChairsMatch = session.chairs.toLowerCase().includes(query);
-                const isPanelistsMatch = session.panelists.toLowerCase().includes(query);
 
                 // Lọc riêng các bài báo cáo (talks) có chứa từ khóa (ở chủ đề hoặc diễn giả)
                 const matchedTalks = session.talks.filter(talk =>
@@ -949,7 +948,7 @@
                     talk.speaker.toLowerCase().includes(query)
                 );
 
-                if (isTitleMatch || isChairsMatch || isPanelistsMatch) {
+                if (isTitleMatch || isChairsMatch) {
                     // Nếu tìm trúng tên Phiên hoặc Chủ tọa -> Giữ nguyên toàn bộ bài báo cáo bên trong
                     acc.push(session);
                 } else if (matchedTalks.length > 0) {
