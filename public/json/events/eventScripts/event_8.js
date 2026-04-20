@@ -5,7 +5,7 @@
     const menus = [
         { id: 'tong-quan', label: 'Chương trình tổng quan' },
         { id: 'chi-tiet', label: 'Chương trình chi tiết' },
-        // { id: 'phien-khoa-hoc', label: 'Các phiên khoa học' },
+        { id: 'tai-tro', label: 'Đơn vị tài trợ' },
         { id: 'ca-lam-sang', label: 'Ca lâm sàng trực tiếp' },
         { id: 'mau-slide', label: 'Mẫu Slide' },
         // { id: 'tai-chuong-trinh', label: 'Tải chương trình' },
@@ -941,6 +941,7 @@
                 // Kiểm tra xem tiêu đề phiên hoặc danh sách chủ tọa có chứa từ khóa không
                 const isTitleMatch = session.title.toLowerCase().includes(query);
                 const isChairsMatch = session.chairs.toLowerCase().includes(query);
+                const isPanelistsMatch = session.panelists.toLowerCase().includes(query);
 
                 // Lọc riêng các bài báo cáo (talks) có chứa từ khóa (ở chủ đề hoặc diễn giả)
                 const matchedTalks = session.talks.filter(talk =>
@@ -948,7 +949,7 @@
                     talk.speaker.toLowerCase().includes(query)
                 );
 
-                if (isTitleMatch || isChairsMatch) {
+                if (isTitleMatch || isChairsMatch || isPanelistsMatch) {
                     // Nếu tìm trúng tên Phiên hoặc Chủ tọa -> Giữ nguyên toàn bộ bài báo cáo bên trong
                     acc.push(session);
                 } else if (matchedTalks.length > 0) {
@@ -1100,6 +1101,8 @@
                                 <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='/files/Template MICA 2026.pptx'> Tải mẫu Slide báo cáo</a></div>
                             </div>`;
 
+    const htmlTaiTro = `<img src="/files/don-vi-tai-tro-mica-2026.png" alt="" width="100%">`;
+
     function renderMenu() {
         const menuList = document.getElementById('mica-menu-list');
         if (!menuList) return;
@@ -1169,6 +1172,8 @@
 
         } else if (activeMenuId === 'mau-slide') {
             mainContent.innerHTML = htmlMauSlide;
+        } else if (activeMenuId === 'don-vi-tai-tro') {
+            mainContent.innerHTML = htmlTaiTro;
         } else {
             const currentMenu = menus.find(m => m.id === activeMenuId);
             mainContent.innerHTML = `
