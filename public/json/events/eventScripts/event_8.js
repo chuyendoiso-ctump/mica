@@ -1027,50 +1027,50 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 1</td>
-                                <td style="background-color: #fed7aa;">Kỷ nguyên bóng phủ thuốc trong can thiệp mạch vành</td>
-                                <td style="background-color: #fef08a;">Đánh giá nguy cơ sớm đến kiểm soát nguy cơ tồn dư</td>
-                                <td style="background-color: #bbf7d0;">Vai trò can thiệp sớm để cải thiện tiên lượng hội chứng tim - thận - chuyển hóa</td>
-                                <td style="background-color: #bfdbfe;">Tối ưu hóa điều trị: góc nhìn từ quản lý bệnh viện đến hệ thống y tế</td>
+                                <td style="background-color: #fed7aa;">KỶ NGUYÊN BÓNG PHỦ THUỐC TRONG CAN THIỆP MẠCH VÀNH</td>
+                                <td style="background-color: #fef08a;">ĐÁNH GIÁ NGUY CƠ SỚM ĐẾN KIỂM SOÁT NGUY CƠ TỒN DƯ</td>
+                                <td style="background-color: #bbf7d0;">VAI TRÒ CAN THIỆP SỚM ĐỂ CẢI THIỆN TIÊN LƯỢNG HỘI CHỨNG TIM - THẬN - CHUYỂN HÓA</td>
+                                <td style="background-color: #bfdbfe;">TỐI ƯU HÓA ĐIỀU TRỊ: GÓC NHÌN TỪ QUẢN LÝ BỆNH VIỆN ĐẾN HỆ THỐNG Y TẾ</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 2</td>
-                                <td style="background-color: #fed7aa;">Chiến lược can thiệp sang thương phức tạp</td>
-                                <td style="background-color: #fef08a;">Tiếp cận mới tăng huyết áp và yếu tố nguy cơ</td>
-                                <td style="background-color: #bbf7d0;">Can thiệp CTO: khi nào, bằng cách nào?</td>
-                                <td style="background-color: #bfdbfe;">Từ khuyến cáo đến ca lâm sàng</td>
+                                <td style="background-color: #fed7aa;">CHIẾN LƯỢC CAN THIỆP SANG THƯƠNG PHỨC TẠP</td>
+                                <td style="background-color: #fef08a;">TIẾP CẬN MỚI TĂNG HUYẾT ÁP VÀ YẾU TỐ NGUY CƠ</td>
+                                <td style="background-color: #bbf7d0;">CAN THIỆP CTO: KHI NÀO, BẰNG CÁCH NÀO?</td>
+                                <td style="background-color: #bfdbfe;">TỪ KHUYẾN CÁO ĐẾN CA LÂM SÀNG</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 3</td>
-                                <td style="background-color: #fed7aa;">Live case in a box: Complex PCI</td>
-                                <td style="background-color: #fef08a;">Điều trị toàn diện suy tim</td>
-                                <td style="background-color: #bbf7d0;">Thách thức và chiến lược tối ưu hóa điều trị rung nhĩ</td>
-                                <td style="background-color: #bfdbfe;">Từ chuẩn bị đến làm chủ can thiệp</td>
+                                <td style="background-color: #fed7aa;">LIVE CASE IN A BOX: COMPLEX PCI</td>
+                                <td style="background-color: #fef08a;">ĐIỀU TRỊ TOÀN DIỆN SUY TIM</td>
+                                <td style="background-color: #bbf7d0;">THÁCH THỨC VÀ CHIẾN LƯỢC TỐI ƯU HÓA ĐIỀU TRỊ RUNG NHĨ</td>
+                                <td style="background-color: #bfdbfe;">TỪ CHUẨN BỊ ĐẾN LÀM CHỦ CAN THIỆP</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 4</td>
-                                <td style="background-color: #fed7aa;">Tiếp cận toàn diện tổn thương MV vôi hóa nặng</td>
+                                <td style="background-color: #fed7aa;">TIẾP CẬN TOÀN DIỆN TỔN THƯƠNG MV VÔI HÓA NẶNG</td>
                                 <td style="background-color: #fef08a;"></td>
-                                <td style="background-color: #bbf7d0;">Can thiệp bệnh tim cấu trúc: xu hướng cập nhật</td>
-                                <td style="background-color: #bfdbfe;">Nghiên cứu khoa học</td>
+                                <td style="background-color: #bbf7d0;">CAN THIỆP BỆNH TIM CẤU TRÚC: XU HƯỚNG CẬP NHẬT</td>
+                                <td style="background-color: #bfdbfe;">NGHIÊN CỨU KHOA HỌC</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 5</td>
-                                <td style="background-color: #fed7aa;">Live case in a box: Calcified lesions</td>
-                                <td style="background-color: #fef08a;">Hội chứng tim – thận – chuyển hóa: tiếp cận tích hợp và điều trị toàn diện</td>
-                                <td style="background-color: #bbf7d0;">Can thiệp van và động mạch chủ: cập nhật và kinh nghiệm thực tiễn</td>
+                                <td style="background-color: #fed7aa;">LIVE CASE IN A BOX: CALCIFIED LESIONS</td>
+                                <td style="background-color: #fef08a;">HỘI CHỨNG TIM – THẬN – CHUYỂN HÓA: TIẾP CẬN TÍCH HỢP VÀ ĐIỀU TRỊ TOÀN DIỆN</td>
+                                <td style="background-color: #bbf7d0;">CAN THIỆP VAN VÀ ĐỘNG MẠCH CHỦ: CẬP NHẬT VÀ KINH NGHIỆM THỰC TIỄN</td>
                                 <td style="background-color: #bfdbfe;"></td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
-                                <td style="background-color: #fed7aa;">Cập nhật vai trò hình ảnh học nội mạch trong PCI</td>
-                                <td style="background-color: #fef08a;">Điều trị bệnh động mạch vành trong kỷ nguyên đa mục tiêu</td>
-                                <td style="background-color: #bbf7d0;">Can thiệp mạch máu ngoại biên: định hướng tương lai</td>
+                                <td style="background-color: #fed7aa;">CẬP NHẬT VAI TRÒ HÌNH ẢNH HỌC NỘI MẠCH TRONG PCI</td>
+                                <td style="background-color: #fef08a;">ĐIỀU TRỊ BỆNH ĐỘNG MẠCH VÀNH TRONG KỶ NGUYÊN ĐA MỤC TIÊU</td>
+                                <td style="background-color: #bbf7d0;">CAN THIỆP MẠCH MÁU NGOẠI BIÊN: ĐỊNH HƯỚNG TƯƠNG LAI</td>
                                 <td style="background-color: #bfdbfe;"></td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 7</td>
-                                <td style="background-color: #fed7aa;">Live case in a box: Image-guided complex PCI</td>
-                                <td style="background-color: #fef08a;">Tiếp cận toàn diện yếu tố ngoài tim mạch ảnh hưởng đến kết cục tim mạch</td>
+                                <td style="background-color: #fed7aa;">LIVE CASE IN A BOX: IMAGE-GUIDED COMPLEX PCI</td>
+                                <td style="background-color: #fef08a;">TIẾP CẬN TOÀN DIỆN YẾU TỐ NGOÀI TIM MẠCH ẢNH HƯỞNG ĐẾN KẾT CỤC TIM MẠCH</td>
                                 <td style="background-color: #bbf7d0;"></td>
                                 <td style="background-color: #bfdbfe;"></td>
                             </tr>
