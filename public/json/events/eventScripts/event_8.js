@@ -1014,16 +1014,16 @@
                     <table>
                         <thead>
                             <tr>
-                                <th style="background-color: #cbd5e1; width: 10%; text-align: center;">Phiên</th>
-                                <th style="background-color: #fed7aa; width: 25%; text-align: center;">Hội Trường Cần Thơ</th>
-                                <th style="background-color: #fef08a; width: 25%; text-align: center;">Hội Trường Hậu Giang</th>
-                                <th style="background-color: #bbf7d0; width: 25%; text-align: center;">Hội Trường Sóc Trăng</th>
-                                <th style="background-color: #bfdbfe; width: 15%; text-align: center;">Góc Giao Lưu MICA</th>
+                                <th style="background-color: #cbd5e1; width: 8%; text-align: center;">Phiên</th>
+                                <th style="background-color: #fed7aa; width: 23%; text-align: center;">Hội Trường Cần Thơ</th>
+                                <th style="background-color: #fef08a; width: 23%; text-align: center;">Hội Trường Hậu Giang</th>
+                                <th style="background-color: #bbf7d0; width: 23%; text-align: center;">Hội Trường Sóc Trăng</th>
+                                <th style="background-color: #bfdbfe; width: 23%; text-align: center;">Góc Giao Lưu MICA</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr style="background-color: #b48600; color: white;">
-                                <td colspan="5" style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px; border-top: 16px solid white;">Thứ bảy, ngày 16/5/2026 (7-17h)</td>
+                                <td colspan="5" style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px; border-top: 16px solid white;">8h00 - 8h30: Lễ khai mạc</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 1</td>
