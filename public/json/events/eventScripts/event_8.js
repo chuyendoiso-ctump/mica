@@ -3,6 +3,7 @@
     if (!micaComponent) return;
 
     const menus = [
+        { id: 'bao-cao-vien', label: 'Chủ tọa & Báo cáo viên' },
         { id: 'tong-quan', label: 'Chương trình tổng quan' },
         { id: 'chi-tiet', label: 'Chương trình chi tiết' },
         { id: 'don-vi-tai-tro', label: 'Đơn vị tài trợ' },
@@ -893,6 +894,410 @@
         ]
     };
 
+    // --- DỮ LIỆU BÁO CÁO VIÊN TRÍCH XUẤT TỪ FILE WORD ---
+    const speakersData = [
+        {
+            "name": "GS.TS. Nguyễn Hoàng Định",
+            "desc": "Phó Giám đốc Bệnh viện Đại học Y Dược Thành phố Hồ Chí Minh"
+        },
+        {
+            "name": "GS.TS. Đặng Vạn Phước",
+            "desc": "Phó Chủ tịch Hội Tim mạch học Việt Nam<br>Nguyên Hiệu trưởng Đại học Y Dược TP. Hồ Chí Minh"
+        },
+        {
+            "name": "GS.TS. Hoàng Anh Tiến",
+            "desc": "Phó Chủ tịch Phân hội Xơ vữa động mạch Việt Nam<br>Giám đốc Trung tâm Tim mạch, Bệnh viện Trường Đại học Y Dược Huế"
+        },
+        {
+            "name": "PGS.TS. Trần Viết An",
+            "desc": "Chủ tịch Chi hội Tim mạch can thiệp Mekong<br>Phó Hiệu trưởng Trường Đại học Y Dược Cần Thơ"
+        },
+        {
+            "name": "PGS.TS. Hồ Anh Bình",
+            "desc": "Giám đốc Trung tâm Tim mạch – Bệnh viện Trung Ương Huế<br>Phó Giám đốc Bệnh viện Quốc tế Trung ương Huế<br>Phó chủ tịch Phân hội Tim mạch can thiệp Việt Nam"
+        },
+        {
+            "name": "PGS.TS. Đỗ Văn Chiến",
+            "desc": "Phó Chủ nhiệm Khoa Hồi sức Tim mạch, Bệnh viện Trung Ương Quân Đội 108."
+        },
+        {
+            "name": "PGS.TS. Hồ Thượng Dũng",
+            "desc": "Nguyên Phó giám đốc tại Bệnh viện Thống Nhất<br>Nguyên Chủ tịch Phân hội Tim mạch can thiệp Việt Nam"
+        },
+        {
+            "name": "PGS.TS. Đỗ Đức Minh",
+            "desc": "Phó giám đốc Trung tâm Y sinh học phân tử, Đại học Y Dược TPHCM"
+        },
+        {
+            "name": "PGS.TS. Nguyễn Thượng Nghĩa",
+            "desc": "Nguyên Phó Giám đốc, Trung tâm tim mạch Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "PGS.TS. Huỳnh Kim Phượng",
+            "desc": "Trường Đại học Y Khoa Phạm Ngọc Thạch"
+        },
+        {
+            "name": "PGS.TS. Trần Kim Sơn",
+            "desc": "Chủ tịch Liên chi hội Tăng huyết áp Đồng bằng sông Cửu Long<br>Trưởng Khoa Khám bệnh, Bệnh viện Trường Đại học Y Dược Cần Thơ"
+        },
+        {
+            "name": "PGS.TS. Hoàng Văn Sỹ",
+            "desc": "Trưởng Bộ môn Nội Tổng quát, Trường Y, Đại học Y Dược TP. Hồ Chí Minh<br>Trưởng Khoa Nội Tim mạch, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "PGS.TS. Nguyễn Văn Tân",
+            "desc": "Trưởng Bộ môn Lão khoa, ĐHYD TP. HCM<br>Trưởng Khoa Tim mạch Cấp cứu và Can thiệp, Bệnh viện Thống Nhất"
+        },
+        {
+            "name": "PGS.TS. Huỳnh Văn Thưởng",
+            "desc": "Nguyên Phó Giám đốc, Bệnh viện Đa khoa Tỉnh Khánh Hòa"
+        },
+        {
+            "name": "PGs.TS. Võ Phạm Minh Thư",
+            "desc": "Phó giám đốc Bệnh viện Trường ĐHYD Cần Thơ"
+        },
+        {
+            "name": "PGS.TS. Trần Kim Trang",
+            "desc": "Đại học Y dược TP. Hồ Chí Minh"
+        },
+        {
+            "name": "PGS.TS. Nguyễn Văn Trí",
+            "desc": "Chủ tịch Liên chi Hội Lão khoa TP. Hồ Chí Minh"
+        },
+        {
+            "name": "TS.BS. Phạm Minh Ánh",
+            "desc": "Trưởng đơn vị Đơn Vị Phẫu Thuật Can Thiệp Mạch Máu Bệnh viện Vạn Hạnh (TPHCM)"
+        },
+        {
+            "name": "TS.BS. Bùi Thế Dũng",
+            "desc": "Trưởng khoa Nội Tim mạch, Bệnh viện Đại học Y Dược TP. Hồ Chí Minh"
+        },
+        {
+            "name": "TS.BS. Lê Cao Phương Duy",
+            "desc": "Phó giám đốc Bệnh viện Nguyễn Tri Phương"
+        },
+        {
+            "name": "TS.BS. Nguyễn Tất Đạt",
+            "desc": "Khoa Nội Tim mạch, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "TS.BS. Nguyễn Hoàng Hải",
+            "desc": "Giám đốc Bệnh viện Nhân dân Gia Định"
+        },
+        {
+            "name": "TS.BS. Phan Hữu Hên",
+            "desc": "Trưởng khoa Nội tiết, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "TS.BS. Trần Bá Hiếu",
+            "desc": "Trưởng khoa Hồi sức cấp cứu tim mạch, Bệnh viện Bạch Mai"
+        },
+        {
+            "name": "TS.BS. Nguyễn Đức Hoàng",
+            "desc": "Phó giám đốc Bệnh viện Trung Ương Huế Cơ sở 2"
+        },
+        {
+            "name": "TS.BS. Nguyễn Văn Hoàng",
+            "desc": "Giám đốc Bệnh viện Đa khoa Long An"
+        },
+        {
+            "name": "TS.BS. Đinh Đức Huy",
+            "desc": "Giám đốc Nội Tim mạch, Bệnh viện Tim Tâm Đức TP. HCM"
+        },
+        {
+            "name": "TS.BS. Ngô Minh Hùng",
+            "desc": "Phó Trưởng Khoa Tim mạch Can thiệp, Bệnh viện Chợ Rẫy<br>Phó Chủ tịch Hội đồng cố vấn Y khoa, Bệnh viện Đại học Nam Cần Thơ"
+        },
+        {
+            "name": "TS.BS. Nguyễn Minh Hùng",
+            "desc": ""
+        },
+        {
+            "name": "TS.BS. Phạm Như Hùng",
+            "desc": "Giám đốc Trung tâm tim mạch, Phó Giám đốc Bệnh viện Tim Hà Nội"
+        },
+        {
+            "name": "TS.BS. Phạm Trần Linh",
+            "desc": "Phó Chủ tịch Phân hội Nhịp tim Việt Nam<br>Trưởng khoa Rối loạn nhịp và Điện sinh lý, Viện Tim mạch, Bệnh viện Bạch Mai"
+        },
+        {
+            "name": "TS. Nguyễn Thế Quyền",
+            "desc": "Bộ môn Lão khoa, Trường Đại học Y khoa Phạm Ngọc Thạch"
+        },
+        {
+            "name": "TS.BS. Lương Cao Sơn",
+            "desc": "Trưởng Đơn vị Nhịp tim học, Bệnh viện Đại học Y Dược TP. HCM<br>Phó Trưởng khoa Nội Tim mạch, Bệnh viện Đại học Y Dược TP. Hồ Chí Minh"
+        },
+        {
+            "name": "TS.BS. Nguyễn Quốc Thái",
+            "desc": "Phó Viện trưởng Viện Tim mạch Việt Nam, Bệnh viện Bạch Mai"
+        },
+        {
+            "name": "TS.BS. Trần Viết Thắng",
+            "desc": "Khoa Tim mạch Can thiệp, Bệnh viện Nhân dân Gia Định"
+        },
+        {
+            "name": "TS.BS. Trần Hữu Thế",
+            "desc": "Trưởng Khoa Tim mạch, Bệnh viện Đa khoa Tiền Giang"
+        },
+        {
+            "name": "TS.BS. Nguyễn Ngọc Phương Thư",
+            "desc": "Trường Đại học Y khoa Phạm Ngọc Thạch"
+        },
+        {
+            "name": "TS.BS. Đỗ Nguyên Tín",
+            "desc": "Chủ tịch Liên chi hội Tim mạch Nhi và Tim bẩm sinh TP. HCM<br>Trưởng Khoa Tim mạch Can thiệp, Bệnh viện Nhi đồng 1 TP. HCM"
+        },
+        {
+            "name": "TS.BS. Trương Tú Trạch",
+            "desc": "Phó Giám đốc, Bệnh viện Đa khoa Tỉnh Sóc Trăng"
+        },
+        {
+            "name": "TS.BS. Hồ Minh Tuấn",
+            "desc": "Trưởng Khoa Tim mạch và Tim mạch can thiệp, Bệnh viện FV"
+        },
+        {
+            "name": "TS.BS. Nguyễn Xuân Tuấn",
+            "desc": "Trưởng khoa Tim mạch can thiệp, Bệnh viện Tim Hà Nội"
+        },
+        {
+            "name": "TS. ĐD. Nguyễn Thị Phương Uyên",
+            "desc": "Phó Trưởng khoa Điều dưỡng - Hộ sinh, Trường Đại học Quốc tế Hồng Bàng"
+        },
+        {
+            "name": "TS.BS. Hoàng Văn",
+            "desc": "Phó Giám đốc Bệnh viện Tim Hà Nội"
+        },
+        {
+            "name": "TS.BS. Vũ Hoàng Vũ",
+            "desc": "Trưởng Khoa Tim mạch Can thiệp, Bệnh viện Đại học Y Dược TP. HCM"
+        },
+        {
+            "name": "BSCKII. Nguyễn Đỗ Anh",
+            "desc": "Trưởng Khoa Tim mạch Can thiệp, Bệnh viện Nhân dân Gia Định"
+        },
+        {
+            "name": "BSCKII. Lê Tân Tố Anh",
+            "desc": "Phó Chủ tịch Liên chi Hội Tăng huyết áp ĐBSCL<br>Phó Giám đốc Bệnh viện Tim mạch Thành phố Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Huỳnh Quốc Bình",
+            "desc": "Trưởng Khoa Tim mạch Can thiệp, Bệnh viện Tim mạch An Giang"
+        },
+        {
+            "name": "BSCKII.ThS. Lý Văn Chiêu",
+            "desc": "Giám đốc Trung tâm Tim mạch, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "BSCKII. Đoàn Công Du",
+            "desc": "Trưởng Khoa Nội Tim mạch – Lão học, Bệnh viện Đa khoa An Giang<br>Trưởng khoa Tim mạch Lão học, Bệnh viện Đa khoa An Giang"
+        },
+        {
+            "name": "BSCKII. Đỗ Văn Bửu Đan",
+            "desc": "Tổng Giám đốc, Trưởng khoa Điện sinh lý tim, Bệnh viện Tim Tâm Đức"
+        },
+        {
+            "name": "BSCKII. Hà Minh Đức",
+            "desc": "Trưởng khoa nội Thần Kinh - Đột Quỵ, BVĐK Châu Đốc, An Giang"
+        },
+        {
+            "name": "BSCKII. Đỗ Thị Cẩm Giang",
+            "desc": "Khoa Tim mạch, Bệnh viện Nhi Đồng 1 TP. Hồ Chí Minh"
+        },
+        {
+            "name": "BSCKII. Lâm Hữu Giang",
+            "desc": "Phó Trưởng Khoa Nội tim mạch, Bệnh viện Đa khoa Kiên Giang"
+        },
+        {
+            "name": "BSCKII. Nguyễn Lưu Giang",
+            "desc": "Trưởng đơn vị DSA, Bệnh viện Đa khoa Quốc Tế SIS Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Trần Trà Giang",
+            "desc": "Khoa tim mạch can thiệp, Bệnh viện Tim Hà Nội"
+        },
+        {
+            "name": "BSCKII. Đoàn Hữu Huy",
+            "desc": "Bệnh viện Nhân Dân Gia Định"
+        },
+        {
+            "name": "BSCKII.ThS. Trần Quang Khánh",
+            "desc": "Khoa Tim mạch Can thiệp, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "BSCKII. Nguyễn Duy Khương",
+            "desc": "Phó khoa Tim mạch can thiệp, Bệnh viện Trường ĐHYD Cần Thơ"
+        },
+        {
+            "name": "BSCKII.ThS. Nguyễn Minh Nguyệt",
+            "desc": "Bệnh viện Đa khoa Quốc tế S.I.S Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Phạm Thanh Phong",
+            "desc": "Phó giám đốc Bệnh viện Đa khoa Trung Ương Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Lương Võ Quang Đăng",
+            "desc": "Bệnh viện Đa khoa Quốc tế Vinmec Phú Quốc"
+        },
+        {
+            "name": "BSCKII. Huỳnh Quốc Sĩ",
+            "desc": "Trưởng khoa Cấp cứu, Bệnh viện Đa khoa Quốc tế SIS Cần Thơ"
+        },
+        {
+            "name": "BsCKII. Võ Hồng Sở",
+            "desc": "Giám đốc Bệnh viện Tim mạch TP Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Trịnh Thanh Tâm",
+            "desc": "Trưởng khoa Hồi sức tích cực - Chống độc, Bệnh viện Tim mạch Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Nguyễn Hữu Thái",
+            "desc": "Trưởng khoa Nội tim Mạch - Can thiệp nội mạch, Bệnh viện Hoàn Mỹ Cửu Long"
+        },
+        {
+            "name": "BSCKII.ThS. Nguyễn Văn Thảo",
+            "desc": "Phó khoa Thần kinh, Bệnh viện Đa khoa Kiên Giang"
+        },
+        {
+            "name": "BSCKII. Lê Mộng Toàn",
+            "desc": "Trưởng khoa Tim mạch can thiệp, Bệnh viện Đa khoa Bến Tre"
+        },
+        {
+            "name": "BSCKII. Lưu Ngọc Trân",
+            "desc": "Trường khoa Nội tiết, Bệnh viện Đa khoa TP Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Trần Văn Triệu",
+            "desc": "Trưởng Khoa Tim mạch Can thiệp, Bệnh viện Trung Ương Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Lý Ích Trung",
+            "desc": "Trưởng Khoa Tim mạch Can thiệp, Trung tâm Tim mạch, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "BSCKII. Đoàn Thanh Tuấn",
+            "desc": "Phó khoa Tim mạch, Bệnh việ Đa khoa TP Cần Thơ"
+        },
+        {
+            "name": "BSCKII. Lê Văn Tuyến",
+            "desc": "Khoa Tim mạch, Bệnh viện Quốc tế Thành Đô"
+        },
+        {
+            "name": "Bà Nguyễn Thị Thanh Xuân",
+            "desc": "Giám đốc Bảo hiểm xã hội TP. Cần Thơ"
+        },
+        {
+            "name": "ThS. Nguyễn Xuân Duy",
+            "desc": "Khoa Tim mạch, Bệnh viện Đa khoa Tâm Anh Hà Nội"
+        },
+        {
+            "name": "ThS. Nguyễn Hữu Đức",
+            "desc": "Trưởng Khoa Nội Tim mạch, Bệnh viện Đa khoa Quảng Trị"
+        },
+        {
+            "name": "ThS.BSCKI. Mai Phạm Trung Hiếu",
+            "desc": "Phó Giám đốc Bệnh Viện Tim mạch An Giang"
+        },
+        {
+            "name": "ThS. Nguyễn Quốc Hùng",
+            "desc": "Phó khoa phụ trách Khoa Nội nhi, Bệnh viện Tim Hà Nội"
+        },
+        {
+            "name": "ThS. Phan Anh Khoa",
+            "desc": "Trung tâm Tim mạch, Bệnh viện Trung Ương Huế"
+        },
+        {
+            "name": "ThS.BSNT. Trần Đức Minh",
+            "desc": "Khoa Tim mạch, Bệnh viện Đa khoa Tâm Anh Hà Nội"
+        },
+        {
+            "name": "ThS.BS. Đào Anh Quốc",
+            "desc": "Khoa Phẫu thuật Tim, Bệnh viện Đại học Y Dược TP. HCM"
+        },
+        {
+            "name": "ThS.BS. Trần Lê Uyên Phương",
+            "desc": "Phó khoa Rối loạn nhịp, Trung tâm Tim mạch, Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "ThS.BSNT. Đàm Hải Sơn",
+            "desc": "Khoa phẫu thuật tim mạch và lồng ngực, Trung tâm Tim mạch, Bệnh viện E"
+        },
+        {
+            "name": "ThS.BS. Châu Thuận Thành",
+            "desc": "Khoa Nội Tim mạch, Bệnh viện Đa khoa Kiên Giang"
+        },
+        {
+            "name": "ThS.BS. Lê Minh Thắng",
+            "desc": "Đơn vị DSA, Bệnh viện Đa khoa Quốc Tế SIS Cần Thơ"
+        },
+        {
+            "name": "Ths.BSNT. Võ Văn Thọ",
+            "desc": "Khoa Nội Tổng hợp - Tim mạch Bệnh viện Hùng Vương Gia Lai"
+        },
+        {
+            "name": "ThS. Ngô Hoàng Toàn",
+            "desc": "Bộ môn Nội, Trường Đại học Y Dược Cần Thơ"
+        },
+        {
+            "name": "ThS. Phạm Huỳnh Minh Trí",
+            "desc": "Trưởng khoa Tim mạch can thiệp, Bệnh viện Đa khoa An Giang"
+        },
+        {
+            "name": "ThS. Lê Quang Tuấn",
+            "desc": "Phó trưởng khoa Tim mạch, Bệnh viện Cà Mau"
+        },
+        {
+            "name": "ThS.BSNT. Trần Đình Tuyên",
+            "desc": "Viện Tim mạch, Bệnh Viện 19-8"
+        },
+        {
+            "name": "BSCKI. Nguyễn Đức Chính",
+            "desc": "Trưởng Khoa Nội Tổng hợp, Bệnh viện Đa khoa Quốc tế S.I.S Cần Thơ"
+        },
+        {
+            "name": "BSCKI. Nguyễn Đức Hưng",
+            "desc": "Phó khoa Tim mạch phụ trách Can thiệp, Bệnh viện Đa khoa Tâm Anh Hà Nội"
+        },
+        {
+            "name": "BSCKI. Lê Hoàng Khoa",
+            "desc": "Bác sĩ Khoa Nội tim mạch, Bệnh viện Nhi Đồng Cần Thơ"
+        },
+        {
+            "name": "BSCKI. Nguyễn Hoàng Tài My",
+            "desc": "Bệnh viện Chợ Rẫy"
+        },
+        {
+            "name": "BSCKI. Nguyễn Hữu Nghĩa",
+            "desc": "Trưởng khoa Tim mạch can thiệp – Bệnh viện Đa khoa Châu Đốc An Giang"
+        },
+        {
+            "name": "BSCKI. Nguyễn Hữu Nghĩa",
+            "desc": "Phó trưởng khoa Tim mạch can thiệp – Bệnh viện Tim mạch An Giang"
+        },
+        {
+            "name": "BSCKI. Nguyễn Thế Tiến",
+            "desc": "Khoa Tim mạch Can thiệp, Bệnh viện Nhân dân Gia Định"
+        },
+        {
+            "name": "BSCKI. Bùi Quốc Bảo Thành",
+            "desc": "Bệnh viện 199, Bộ Công An, TP Đà Nẵng"
+        },
+        {
+            "name": "BSCKI. Nguyễn Thế Vinh",
+            "desc": "Đơn vị Can thiệp nội mạch, khoa Nội Tim Mạch, Bệnh viện Đa khoa Long An"
+        },
+        {
+            "name": "Bs. Nguyễn Minh Đức",
+            "desc": "Đơn vị DSA, Bệnh viện Đa khoa Quốc Tế SIS Cần Thơ"
+        },
+        {
+            "name": "BS. Nguyễn Quốc Việt",
+            "desc": "Đơn vị can thiệp nội mạch, Bệnh viện Tâm Trí - Cao Lãnh"
+        }
+    ];
+
     // Hàm tô màu chữ (highlight) khi tìm kiếm
     function highlightText(text, query) {
         if (!query || query.trim() === '') return text;
@@ -900,6 +1305,50 @@
         const escapedQuery = query.trim().replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
         const regex = new RegExp(`(${escapedQuery})`, 'gi');
         return text.replace(regex, '<mark style="background-color: #fef08a; padding: 0 2px; border-radius: 2px; color: #1f2937;">$1</mark>');
+    }
+
+    // --- RENDER DANH SÁCH BÁO CÁO VIÊN ---
+    function updateBaoCaoVienView() {
+        const listContainer = document.getElementById('mica-speakers-list');
+        if (!listContainer) return;
+
+        let displaySpeakers = speakersData;
+
+        // Lọc danh sách theo tìm kiếm
+        if (searchQuery.trim() !== '') {
+            const query = searchQuery.trim().toLowerCase();
+            displaySpeakers = speakersData.filter(speaker =>
+                speaker.name.toLowerCase().includes(query) ||
+                speaker.desc.toLowerCase().includes(query)
+            );
+        }
+
+        if (displaySpeakers.length === 0) {
+            listContainer.innerHTML = `
+                <div style="text-align: center; padding: 40px; color: #6b7280; background: white; border-radius: 8px; border: 1px dashed #cbd5e1; grid-column: 1 / -1;">
+                    <svg style="width: 48px; height: 48px; margin: 0 auto 16px auto; color: #9ca3af;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p style="margin: 0; font-size: 16px;">Không tìm thấy báo cáo viên nào phù hợp.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Render ra dạng lưới (Grid)
+        listContainer.innerHTML = displaySpeakers.map(speaker => `
+            <div style="background: white; border-radius: 12px; border: 1px solid #e5e7eb; padding: 20px; display: flex; gap: 16px; align-items: flex-start; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';">
+                <div style="flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background-color: #eff6ff; color: #3b82f6; display: flex; align-items: center; justify-content: center; border: 1px solid #bfdbfe;">
+                    <svg style="width: 24px; height: 24px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                </div>
+                <div style="flex: 1;">
+                    <div style="font-weight: 600; font-size: 15px; color: #1e3a8a; margin-bottom: 6px; line-height: 1.3;">
+                        ${highlightText(speaker.name, searchQuery)}
+                    </div>
+                    <div style="font-size: 13px; color: #4b5563; line-height: 1.5;">
+                        ${highlightText(speaker.desc, searchQuery)}
+                    </div>
+                </div>
+            </div>
+        `).join('');
     }
 
     // Hàm chỉ render lại các Tabs và Nội dung danh sách (để không làm mất focus thanh tìm kiếm)
@@ -1134,40 +1583,40 @@
 
         if (activeMenuId === 'tong-quan') {
             mainContent.innerHTML = htmlTongQuan;
-        } else if (activeMenuId === 'chi-tiet') {
-            searchQuery = ''; // Reset thanh tìm kiếm khi mới nhấn vào menu "Chương trình chi tiết"
+        } else if (activeMenuId === 'chi-tiet' || activeMenuId === 'bao-cao-vien') {
+            searchQuery = ''; // Reset thanh tìm kiếm khi đổi menu
+            const title = activeMenuId === 'chi-tiet' ? 'Chương trình chi tiết' : 'Chủ tọa & Báo cáo viên';
+            const placeholder = activeMenuId === 'chi-tiet' ? 'Tìm diễn giả, bài báo cáo, chủ tọa...' : 'Tìm tên Bác sĩ, chức danh, nơi công tác...';
 
-            // Dựng khung layout chứa ô tìm kiếm (Không bị ghi đè lại khi gõ chữ)
+            // Dựng khung chung có thanh tìm kiếm
             mainContent.innerHTML = `
-                <div class="ribbon-title">Chương trình chi tiết</div>
+                <div class="ribbon-title">${title}</div>
                 <div style="padding: 0 16px 40px 16px;">
                     <!-- Thanh Tìm Kiếm -->
                     <div style="margin-bottom: 16px; position: relative;">
                         <svg style="position: absolute; left: 14px; top: 12px; width: 18px; height: 18px; color: #9ca3af;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                        <input type="text" id="mica-search-input" placeholder="Tìm diễn giả, bài báo cáo, chủ tọa..." autocomplete="off" style="width: 100%; padding: 10px 16px 10px 40px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 14px; outline: none; box-sizing: border-box; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: border-color 0.2s;">
+                        <input type="text" id="mica-search-input" placeholder="${placeholder}" autocomplete="off" style="width: 100%; padding: 10px 16px 10px 40px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 14px; outline: none; box-sizing: border-box; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: border-color 0.2s;">
                     </div>
                     
-                    <!-- Khung chứa Tabs -->
-                    <div id="mica-hall-tabs"></div>
-                    
-                    <!-- Khung chứa Danh sách kết quả -->
-                    <div id="mica-sessions-list"></div>
+                    <!-- Khung Nội dung thay đổi tùy menu -->
+                    ${activeMenuId === 'chi-tiet' ? '<div id="mica-hall-tabs"></div><div id="mica-sessions-list"></div>' : ''}
+                    ${activeMenuId === 'bao-cao-vien' ? '<div id="mica-speakers-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;"></div>' : ''}
                 </div>
             `;
 
-            // Gắn sự kiện (Event Listener) cho ô input tìm kiếm
             const searchInput = document.getElementById('mica-search-input');
             searchInput.addEventListener('input', (e) => {
                 searchQuery = e.target.value;
-                updateChiTietView(); // Cập nhật lại kết quả tìm kiếm ngay lập tức
+                if (activeMenuId === 'chi-tiet') updateChiTietView();
+                if (activeMenuId === 'bao-cao-vien') updateBaoCaoVienView();
             });
 
-            // Hiệu ứng đổi màu viền khi click vào ô search
             searchInput.addEventListener('focus', () => searchInput.style.borderColor = '#3b82f6');
             searchInput.addEventListener('blur', () => searchInput.style.borderColor = '#cbd5e1');
 
-            // Hiển thị nội dung ban đầu
-            updateChiTietView();
+            // Gọi render khung chi tiết
+            if (activeMenuId === 'chi-tiet') updateChiTietView();
+            if (activeMenuId === 'bao-cao-vien') updateBaoCaoVienView();
 
         } else if (activeMenuId === 'mau-slide') {
             mainContent.innerHTML = htmlMauSlide;
