@@ -1590,10 +1590,12 @@
 
             // Dựng khung chung có thanh tìm kiếm
             mainContent.innerHTML = `
+            <div style="display: flex; align-items: left;">
                 <div class="ribbon-title">${title}</div>
                 <div class="mica-content-wrapper">
-                    <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='/files/chuong-trinh-hoi-nghi.pdf'> Tải mẫu Slide báo cáo</a></div>
+                    <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link'> Tải mẫu Slide báo cáo</a></div>
                 </div>
+            </div>
                 <div style="padding: 0 16px 40px 16px;">
                     <!-- Thanh Tìm Kiếm -->
                     <div style="margin-bottom: 16px; position: relative;">
