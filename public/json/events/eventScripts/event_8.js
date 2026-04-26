@@ -35,7 +35,7 @@
                 "talks": []
             },
             {
-                "time": "08:30 - 09:58",
+                "time": "08:30 - 10:11",
                 "title": "KỶ NGUYÊN BÓNG PHỦ THUỐC TRONG CAN THIỆP MẠCH VÀNH",
                 "chairs": "PGs.Ts. Hồ Thượng Dũng - Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Nguyễn Văn Tân - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung",
                 "talks": [
@@ -61,186 +61,191 @@
                     },
                     {
                         "time": "09:22 - 09:34",
-                        "topic": "Bóng phủ thuốc trong tái hẹp trong stent (ISR): Chiến lược điều trị tối ưu trong thực hành",
-                        "speaker": "BsCKII. Đoàn Hữu Huy"
+                        "topic": "Bóng phủ thuốc ở sang thương de novo không phức tạp",
+                        "speaker": "BsCKII. Lâm Duy Tân"
                     },
                     {
                         "time": "09:35 - 09:47",
-                        "topic": "Vai trò của bóng phủ thuốc trong can thiệp tim mạch- thực trạng tại bệnh viện Tim Hà Nội",
+                        "topic": "Bóng phủ thuốc trong tái hẹp trong stent (ISR): Chiến lược điều trị tối ưu trong thực hành",
+                        "speaker": "BsCKII. Đoàn Đức Huy"
+                    },
+                    {
+                        "time": "09:48 - 10:00",
+                        "topic": "Vai trò của bóng phủ thuốc trong can thiệp tim mạch - thực trạng tại bệnh viện Tim Hà Nội",
                         "speaker": "BsCKII. Trần Trà Giang"
                     },
                     {
-                        "time": "09:48 - 9:58",
+                        "time": "10:01 - 10:11",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "09:59 - 11:27",
+                "time": "10:12 - 11:40",
                 "title": "CHIẾN LƯỢC CAN THIỆP SANG THƯƠNG PHỨC TẠP",
                 "chairs": "PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Nguyễn Văn Tân - TS. Đinh Đức Huy - BsCKII. Lý Ích Trung - BSCKII. Trần Văn Triệu",
                 "talks": [
                     {
-                        "time": "09:59 - 10:11",
+                        "time": "10:12 - 10:24",
                         "topic": "PCI cho tổn thương mạch vành hẹp lan tỏa",
                         "speaker": "TS. Đinh Đức Huy"
                     },
                     {
-                        "time": "10:12 - 10:24",
+                        "time": "10:25 - 10:37",
                         "topic": "SPIRIT 48: cập nhật kết quả 1 năm trong điều trị tổn thương động mạch vành dài",
                         "speaker": "BsCKII. Trần Văn Triệu"
                     },
                     {
-                        "time": "10:25 - 10:37",
+                        "time": "10:38 - 10:50",
                         "topic": "Kỹ thuật \"jailed balloon\" trong can thiệp tổn thương chia đôi: tip & trick",
                         "speaker": "PGs.Ts. Nguyễn Thượng Nghĩa"
                     },
                     {
-                        "time": "10:38 - 10:50",
+                        "time": "10:51 - 11:03",
                         "topic": "Kỹ thuật can thiệp phân nhánh Crush cải tiến và ứng dụng",
                         "speaker": "BSCKI. Nguyễn Đức Hưng"
                     },
                     {
-                        "time": "10:51 - 11:03",
+                        "time": "11:04 - 11:16",
                         "topic": "Bảo vệ nhánh bên chủ động trong can thiệp phân nhánh: ca lâm sàng",
                         "speaker": "ThS. Lê Quang Tuấn"
                     },
                     {
-                        "time": "11:04 - 11:16",
+                        "time": "11:17 - 11:29",
                         "topic": "Thiết kế mắt cáo mở của Supraflex Cruz: Giải pháp chuyên biệt cho sang thương phân nhánh",
                         "speaker": "BsCKI. Nguyễn Hữu Nghĩa"
                     },
                     {
-                        "time": "11:17 - 11:27",
+                        "time": "11:30 - 11:40",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "11:28 - 12:13",
+                "time": "11:41 - 12:26",
                 "title": "LIVE CASE IN A BOX: COMPLEX PCI",
                 "chairs": "Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Huỳnh Văn Thưởng - TS. Nguyễn Quốc Thái - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
                 "panelists": 'Ts. Trương Tú Trạch - BsCKII. Huỳnh Quốc Bình',
                 "talks": [
                     {
-                        "time": "11:28 - 12:13",
+                        "time": "11:41 - 12:26",
                         "topic": "Bệnh viện Đa khoa Trung Ương Cần Thơ",
                         "speaker": "BsCKII. Trần Văn Triệu - BsCKI. Dương Hoàng Mẫn"
                     }
                 ]
             },
             {
-                "time": "12:14 - 13:42",
+                "time": "12:27 - 13:55",
                 "title": "TIẾP CẬN TOÀN DIỆN TỔN THƯƠNG MV VÔI HÓA NẶNG",
                 "chairs": "PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung - TS. Hoàng Văn - TS. Trương Tú Trạch",
                 "talks": [
                     {
-                        "time": "12:14 - 12:26",
+                        "time": "12:27 - 12:39",
                         "topic": "Các tiến bộ hiện tại trong can thiệp tổn thương mạch vành vôi hoá phức tạp",
                         "speaker": "TS.Hồ Minh Tuấn"
                     },
                     {
-                        "time": "12:27 - 12:39",
+                        "time": "12:40 - 12:52",
                         "topic": "Tiêu chuẩn lựa chọn bệnh nhân, đánh giá tổn thương động mạch vành vôi hóa và các chiến lược điều trị bằng sóng xung siêu âm",
                         "speaker": "PGs.Ts. Hồ Anh Bình"
                     },
                     {
-                        "time": "12:40 - 12:52",
+                        "time": "12:53 - 13:05",
                         "topic": "Kỹ thuật sử dụng bóng cắt trong thực hành: Mẹo và kinh nghiệm",
                         "speaker": "TS. Hoàng Văn"
                     },
                     {
-                        "time": "12:53 - 13:05",
+                        "time": "13:06 - 13:18",
                         "topic": "Khoan mảng xơ vữa trong kỷ nguyên IVL: Khi nào vẫn là lựa chọn tối ưu?",
                         "speaker": "BsCKII. Lý Ích Trung"
                     },
                     {
-                        "time": "13:06 - 13:18",
+                        "time": "13:19 - 13:31",
                         "topic": "Chiến lược phối hợp kỹ thuật: Xu hướng mới trong PCI vôi hóa nặng",
                         "speaker": "TS. Ngô Minh Hùng"
                     },
                     {
-                        "time": "13:19 - 13:31",
+                        "time": "13:32 - 13:44",
                         "topic": "Làm chủ những ca can thiệp phức tạp: Ưu điểm của cấu trúc kết nối LDZ của stent Supraflex Star trên các tổn thương xoắn vặn",
                         "speaker": "BsCKI. Nguyễn Hữu Nghĩa"
                     },
                     {
-                        "time": "13:32 - 13:42",
+                        "time": "13:45 - 13:55",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "13:45 - 14:30",
+                "time": "13:55 - 14:40",
                 "title": "LIVE CASE IN A BOX: CALCIFIED LESIONS",
                 "chairs": "PGs.Ts. Hồ Thượng Dũng - PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung - PGs.Ts. Đỗ Văn Chiến",
                 "panelists": 'BsCKII. Đoàn Thanh Tuấn - BsCKII. Trần Trà Giang',
                 "talks": [
                     {
-                        "time": "13:45 - 14:30",
+                        "time": "13:55 - 14:40",
                         "topic": "Bệnh viện Đa khoa Sóc Trăng",
                         "speaker": "TS. Trương Tú Trạch - BsCKII. Lý Ích Trung"
                     }
                 ]
             },
             {
-                "time": "14:31 - 15:59",
+                "time": "14:41 - 16:22",
                 "title": "CẬP NHẬT VAI TRÒ HÌNH ẢNH HỌC NỘI MẠCH TRONG PCI",
                 "chairs": "PGs.Ts. Huỳnh Văn Thưởng - PGs.Ts. Đỗ Văn Chiến - TS. Nguyễn Quốc Thái - BsCKII. Nguyễn Đỗ Anh - TS. Vũ Hoàng Vũ",
                 "talks": [
                     {
-                        "time": "14:31 - 14:43",
+                        "time": "14:41 - 14:53",
                         "topic": "Kỷ nguyên chẩn đoán chính xác bệnh mạch vành!",
                         "speaker": "PGs.Ts. Huỳnh Văn Thưởng"
                     },
                     {
-                        "time": "14:44 - 14:56",
+                        "time": "14:54 - 15:06",
                         "topic": "Đặc điểm tổn thương qua IVUS, IVUS-NIRS và OCT: lựa chọn chiến lược PCI",
                         "speaker": "TS. Nguyễn Quốc Thái"
                     },
                     {
-                        "time": "14:57 - 15:09",
+                        "time": "15:07 - 15:19",
                         "topic": "Tối ưu hóa lựa chọn stent và kỹ thuật dưới hướng dẫn hình ảnh nội mạch",
                         "speaker": "BsCKII. Nguyễn Đỗ Anh"
                     },
                     {
-                        "time": "15:10 - 15:22",
+                        "time": "15:20 - 15:32",
                         "topic": "Vai trò của hình ảnh học nội mạch trong PCI tổn thương phức tạp: Thân chung, phân nhánh và tổn thương dài",
                         "speaker": "BsCKII. Trần Văn Triệu"
                     },
                     {
-                        "time": "15:23 - 15:35",
+                        "time": "15:33 - 15:45",
                         "topic": "Xu hướng mới trong PCI chính xác: IVUS-NIRS, tích hợp đa phương thức và trí tuệ nhân tạo",
                         "speaker": "TS. Vũ Hoàng Vũ"
                     },
                     {
-                        "time": "15:36 - 15:48",
+                        "time": "15:46 - 15:58",
                         "topic": "Vai trò OCT trong hướng dẫn can thiệp tổn thương vôi hóa",
                         "speaker": "TS. Nguyễn Thế Quyền"
                     },
                     {
-                        "time": "15:49 - 16:01",
+                        "time": "15:59 - 16:11",
                         "topic": "Vai trò của IVUS trong biến chứng do can thiệp động mạch vành.",
                         "speaker": "PGs.Ts. Đỗ Văn Chiến"
                     },
                     {
-                        "time": "16:02 - 16:12",
+                        "time": "16:12 - 16:22",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "16:15 - 17:00",
+                "time": "16:25 - 17:10",
                 "title": "LIVE CASE IN A BOX: IMAGE-GUIDED COMPLEX PCI",
                 "chairs": "BsCKII. Lý Ích Trung - TS. Nguyễn Quốc Thái - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
                 "panelists": 'BsCKII. Nguyễn Đỗ Anh - PGs.Ts. Trần Viết An',
                 "talks": [
                     {
-                        "time": "16:15 - 17:00",
+                        "time": "16:25 - 17:10",
                         "topic": "Bệnh viện Đa khoa Kiên Giang",
                         "speaker": "BsCKII. Lâm Hữu Giang - ThS. Trần Minh Trung"
                     }
