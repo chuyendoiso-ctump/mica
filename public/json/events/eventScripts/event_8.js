@@ -1476,66 +1476,66 @@
                 <div class="mica-table-responsive">
                     <table class="mica-table">
                         <thead>
-                            <tr>
-                                <th style="background-color: #cbd5e1; width: 8%; text-align: center;">Phiên</th>
-                                <th style="background-color: #fed7aa; width: 23%; text-align: center;">Hội Trường Cần Thơ</th>
-                                <th style="background-color: #fef08a; width: 23%; text-align: center;">Hội Trường Hậu Giang</th>
-                                <th style="background-color: #bbf7d0; width: 23%; text-align: center;">Hội Trường Sóc Trăng</th>
-                                <th style="background-color: #bfdbfe; width: 23%; text-align: center;">Góc Giao Lưu MICA</th>
+                            <tr style="background-color: #f1f5f9;">
+                                <th style="width: 8%; text-align: center;">Phiên</th>
+                                <th style="width: 23%; text-align: center;">Hội Trường Cần Thơ</th>
+                                <th style="width: 23%; text-align: center;">Hội Trường Hậu Giang</th>
+                                <th style="width: 23%; text-align: center;">Hội Trường Sóc Trăng</th>
+                                <th style="width: 23%; text-align: center;">Góc Giao Lưu MICA</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background-color: #b48600; color: white;">
+                            <tr style="background-color: #e2e8f0; color: white;">
                                 <td colspan="5" style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px; border-top: 16px solid white;">8h00 - 8h30: Lễ khai mạc</td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 1</td>
-                                <td style="background-color: #fed7aa;">KỶ NGUYÊN BÓNG PHỦ THUỐC TRONG CAN THIỆP MẠCH VÀNH</td>
-                                <td style="background-color: #fef08a;">ĐÁNH GIÁ NGUY CƠ SỚM ĐẾN KIỂM SOÁT NGUY CƠ TỒN DƯ</td>
-                                <td style="background-color: #bbf7d0;">VAI TRÒ CAN THIỆP SỚM ĐỂ CẢI THIỆN TIÊN LƯỢNG HỘI CHỨNG TIM - THẬN - CHUYỂN HÓA</td>
-                                <td style="background-color: #bfdbfe;">TỐI ƯU HÓA ĐIỀU TRỊ: GÓC NHÌN TỪ QUẢN LÝ BỆNH VIỆN ĐẾN HỆ THỐNG Y TẾ</td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 1</td>
+                                <td>KỶ NGUYÊN BÓNG PHỦ THUỐC TRONG CAN THIỆP MẠCH VÀNH</td>
+                                <td>ĐÁNH GIÁ NGUY CƠ SỚM ĐẾN KIỂM SOÁT NGUY CƠ TỒN DƯ</td>
+                                <td>VAI TRÒ CAN THIỆP SỚM ĐỂ CẢI THIỆN TIÊN LƯỢNG HỘI CHỨNG TIM - THẬN - CHUYỂN HÓA</td>
+                                <td>TỐI ƯU HÓA ĐIỀU TRỊ: GÓC NHÌN TỪ QUẢN LÝ BỆNH VIỆN ĐẾN HỆ THỐNG Y TẾ</td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 2</td>
-                                <td style="background-color: #fed7aa;">CHIẾN LƯỢC CAN THIỆP SANG THƯƠNG PHỨC TẠP</td>
-                                <td style="background-color: #fef08a;">TIẾP CẬN MỚI TĂNG HUYẾT ÁP VÀ YẾU TỐ NGUY CƠ</td>
-                                <td style="background-color: #bbf7d0;">CAN THIỆP CTO: KHI NÀO, BẰNG CÁCH NÀO?</td>
-                                <td style="background-color: #bfdbfe;">TỪ KHUYẾN CÁO ĐẾN CA LÂM SÀNG</td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 2</td>
+                                <td>CHIẾN LƯỢC CAN THIỆP SANG THƯƠNG PHỨC TẠP</td>
+                                <td>TIẾP CẬN MỚI TĂNG HUYẾT ÁP VÀ YẾU TỐ NGUY CƠ</td>
+                                <td>CAN THIỆP CTO: KHI NÀO, BẰNG CÁCH NÀO?</td>
+                                <td>TỪ KHUYẾN CÁO ĐẾN CA LÂM SÀNG</td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 3</td>
-                                <td style="background-color: #fed7aa;">LIVE CASE IN A BOX: COMPLEX PCI</td>
-                                <td style="background-color: #fef08a;">ĐIỀU TRỊ TOÀN DIỆN SUY TIM</td>
-                                <td style="background-color: #bbf7d0;">THÁCH THỨC VÀ CHIẾN LƯỢC TỐI ƯU HÓA ĐIỀU TRỊ RUNG NHĨ</td>
-                                <td style="background-color: #bfdbfe;">TỪ CHUẨN BỊ ĐẾN LÀM CHỦ CAN THIỆP</td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 3</td>
+                                <td>LIVE CASE IN A BOX: COMPLEX PCI</td>
+                                <td>ĐIỀU TRỊ TOÀN DIỆN SUY TIM</td>
+                                <td>THÁCH THỨC VÀ CHIẾN LƯỢC TỐI ƯU HÓA ĐIỀU TRỊ RUNG NHĨ</td>
+                                <td>TỪ CHUẨN BỊ ĐẾN LÀM CHỦ CAN THIỆP</td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 4</td>
-                                <td style="background-color: #fed7aa;">TIẾP CẬN TOÀN DIỆN TỔN THƯƠNG MV VÔI HÓA NẶNG</td>
-                                <td style="background-color: #fef08a;"></td>
-                                <td style="background-color: #bbf7d0;">CAN THIỆP BỆNH TIM CẤU TRÚC: XU HƯỚNG CẬP NHẬT</td>
-                                <td style="background-color: #bfdbfe;">NGHIÊN CỨU KHOA HỌC</td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 4</td>
+                                <td>TIẾP CẬN TOÀN DIỆN TỔN THƯƠNG MV VÔI HÓA NẶNG</td>
+                                <td></td>
+                                <td>CAN THIỆP BỆNH TIM CẤU TRÚC: XU HƯỚNG CẬP NHẬT</td>
+                                <td>NGHIÊN CỨU KHOA HỌC</td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 5</td>
-                                <td style="background-color: #fed7aa;">LIVE CASE IN A BOX: CALCIFIED LESIONS</td>
-                                <td style="background-color: #fef08a;">HỘI CHỨNG TIM – THẬN – CHUYỂN HÓA: TIẾP CẬN TÍCH HỢP VÀ ĐIỀU TRỊ TOÀN DIỆN</td>
-                                <td style="background-color: #bbf7d0;">CAN THIỆP VAN VÀ ĐỘNG MẠCH CHỦ: CẬP NHẬT VÀ KINH NGHIỆM THỰC TIỄN</td>
-                                <td style="background-color: #bfdbfe;"></td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 5</td>
+                                <td>LIVE CASE IN A BOX: CALCIFIED LESIONS</td>
+                                <td>HỘI CHỨNG TIM – THẬN – CHUYỂN HÓA: TIẾP CẬN TÍCH HỢP VÀ ĐIỀU TRỊ TOÀN DIỆN</td>
+                                <td>CAN THIỆP VAN VÀ ĐỘNG MẠCH CHỦ: CẬP NHẬT VÀ KINH NGHIỆM THỰC TIỄN</td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 6</td>
-                                <td style="background-color: #fed7aa;">CẬP NHẬT VAI TRÒ HÌNH ẢNH HỌC NỘI MẠCH TRONG PCI</td>
-                                <td style="background-color: #fef08a;">ĐIỀU TRỊ BỆNH ĐỘNG MẠCH VÀNH TRONG KỶ NGUYÊN ĐA MỤC TIÊU</td>
-                                <td style="background-color: #bbf7d0;">CAN THIỆP MẠCH MÁU NGOẠI BIÊN: ĐỊNH HƯỚNG TƯƠNG LAI</td>
-                                <td style="background-color: #bfdbfe;"></td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 6</td>
+                                <td>CẬP NHẬT VAI TRÒ HÌNH ẢNH HỌC NỘI MẠCH TRONG PCI</td>
+                                <td>ĐIỀU TRỊ BỆNH ĐỘNG MẠCH VÀNH TRONG KỶ NGUYÊN ĐA MỤC TIÊU</td>
+                                <td>CAN THIỆP MẠCH MÁU NGOẠI BIÊN: ĐỊNH HƯỚNG TƯƠNG LAI</td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; font-weight: bold; vertical-align: middle; background-color: #f3f4f6;">Phiên 7</td>
-                                <td style="background-color: #fed7aa;">LIVE CASE IN A BOX: IMAGE-GUIDED COMPLEX PCI</td>
-                                <td style="background-color: #fef08a;">TIẾP CẬN TOÀN DIỆN YẾU TỐ NGOÀI TIM MẠCH ẢNH HƯỞNG ĐẾN KẾT CỤC TIM MẠCH</td>
-                                <td style="background-color: #bbf7d0;"></td>
-                                <td style="background-color: #bfdbfe;"></td>
+                                <td style="text-align: center; font-weight: bold; vertical-align: middle;">Phiên 7</td>
+                                <td>LIVE CASE IN A BOX: IMAGE-GUIDED COMPLEX PCI</td>
+                                <td>TIẾP CẬN TOÀN DIỆN YẾU TỐ NGOÀI TIM MẠCH ẢNH HƯỞNG ĐẾN KẾT CỤC TIM MẠCH</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1545,9 +1545,10 @@
     `;
 
     const htmlMauSlide = `<div class="mica-page-title">Mẫu Slide</div>
-                            <div class="mica-content-wrapper">
-                                <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='/files/Template MICA 2026.pptx'> Tải mẫu Slide báo cáo</a></div>
-                            </div>`;
+                            <a href="/files/Template MICA 2026.pptx" class="mica-btn" download>
+                                <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
+                                TẢI MẪU SLIDE BÁO CÁO
+                            </a>`;
 
     const htmlTaiTro = `<img src="/files/don-vi-tai-tro-mica-2026.jpg" alt="" width="100%">`;
 
@@ -1592,7 +1593,10 @@
             mainContent.innerHTML = `
             <div style="display: flex; align-items: left;">
                 <div class="mica-page-title">${title}</div>
-                <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 24px 0 24px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link'> Tải chương trình hội nghị </a></div>
+                <a href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link' class="mica-btn" download>
+                    <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
+                    TẢI CHƯƠNG TRÌNH HỘI NGHỊ
+                </a>
             </div>
                 <div style="padding: 0 16px 40px 16px;">
                     <!-- Thanh Tìm Kiếm -->
