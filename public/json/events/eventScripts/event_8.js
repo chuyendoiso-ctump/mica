@@ -925,6 +925,10 @@
             "desc": "Nguyên Phó giám đốc tại Bệnh viện Thống Nhất<br>Nguyên Chủ tịch Phân hội Tim mạch can thiệp Việt Nam"
         },
         {
+            "name": "PGS.TS. Nguyễn Hoàng Hải",
+            "desc": "Giám đốc Bệnh viện Nhân dân Gia Định"
+        },
+        {
             "name": "PGS.TS. Đỗ Đức Minh",
             "desc": "Phó giám đốc Trung tâm Y sinh học phân tử, Đại học Y Dược TPHCM"
         },
@@ -981,10 +985,6 @@
             "desc": "Khoa Nội Tim mạch, Bệnh viện Chợ Rẫy"
         },
         {
-            "name": "TS.BS. Nguyễn Hoàng Hải",
-            "desc": "Giám đốc Bệnh viện Nhân dân Gia Định"
-        },
-        {
             "name": "TS.BS. Phan Hữu Hên",
             "desc": "Trưởng khoa Nội tiết, Bệnh viện Chợ Rẫy"
         },
@@ -1010,7 +1010,7 @@
         },
         {
             "name": "TS.BS. Nguyễn Minh Hùng",
-            "desc": ""
+            "desc": "Phó Trưởng Khoa Tim bẩm sinh và bệnh tim cấu trúc<br>Viện Tim mạch, Bệnh viện Bạch Mai"
         },
         {
             "name": "TS.BS. Phạm Như Hùng",
@@ -1283,10 +1283,6 @@
         {
             "name": "BSCKI. Bùi Quốc Bảo Thành",
             "desc": "Bệnh viện 199, Bộ Công An, TP Đà Nẵng"
-        },
-        {
-            "name": "BSCKI. Nguyễn Thế Vinh",
-            "desc": "Đơn vị Can thiệp nội mạch, khoa Nội Tim Mạch, Bệnh viện Đa khoa Long An"
         },
         {
             "name": "Bs. Nguyễn Minh Đức",
