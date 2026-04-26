@@ -1470,11 +1470,11 @@
     };
 
     const htmlTongQuan = `
-        <div class="ribbon-title">Chương trình tổng quan</div>
+        <div class="mica-page-title">Chương trình tổng quan</div>
         <div class="mica-content-wrapper">
             <div class="mica-table-card">
                 <div class="mica-table-responsive">
-                    <table>
+                    <table class="mica-table">
                         <thead>
                             <tr>
                                 <th style="background-color: #cbd5e1; width: 8%; text-align: center;">Phiên</th>
@@ -1544,7 +1544,7 @@
         </div>
     `;
 
-    const htmlMauSlide = `<div class="ribbon-title">Mẫu Slide</div>
+    const htmlMauSlide = `<div class="mica-page-title">Mẫu Slide</div>
                             <div class="mica-content-wrapper">
                                 <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 16px 0 16px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='/files/Template MICA 2026.pptx'> Tải mẫu Slide báo cáo</a></div>
                             </div>`;
@@ -1591,7 +1591,7 @@
             // Dựng khung chung có thanh tìm kiếm
             mainContent.innerHTML = `
             <div style="display: flex; align-items: left;">
-                <div class="ribbon-title">${title}</div>
+                <div class="mica-page-title">${title}</div>
                 <div style="position: relative; background: linear-gradient(to right, #1e3a8a, #be185d); padding: 10px 20px; border-radius: 16px 16px 16px 16px; display: inline-block; font-size: 1.125rem; font-weight: 500; margin: 24px 0 24px 16px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"><a style="color: white !important;" href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link'> Tải chương trình hội nghị </a></div>
             </div>
                 <div style="padding: 0 16px 40px 16px;">
@@ -1628,7 +1628,7 @@
         } else {
             const currentMenu = menus.find(m => m.id === activeMenuId);
             mainContent.innerHTML = `
-                <div class="ribbon-title">${currentMenu.label}</div>
+                <div class="mica-page-title">${currentMenu.label}</div>
                 <div class="mica-empty-container">
                     <div class="mica-empty-box">
                         <svg class="mica-empty-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
