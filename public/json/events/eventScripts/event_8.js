@@ -1598,9 +1598,10 @@
                 ${activeMenuId === 'chi-tiet' ? `<a href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link' class="mica-btn" download>
                     <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
                     TẢI CHƯƠNG TRÌNH HỘI NGHỊ
-                </a></div>` : ''}
+                </a>` : ''}
             </div>
 
+            </div>
                 <div style="padding: 0 16px 40px 16px;">
                     <!-- Thanh Tìm Kiếm -->
                     <div style="margin-bottom: 16px; position: relative;">
