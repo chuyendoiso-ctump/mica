@@ -1485,7 +1485,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background-color: #e2e8f0; color: white;">
+                            <tr style="background-color: #e2e8f0; color: red;">
                                 <td colspan="5" style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px; border-top: 16px solid white;">8h00 - 8h30: Lễ khai mạc</td>
                             </tr>
                             <tr>
@@ -1545,10 +1545,12 @@
     `;
 
     const htmlMauSlide = `<div class="mica-page-title">Mẫu Slide</div>
+                        <div style="text-align: center; margin-left: 20px; margin-right: 20px;">
                             <a href="/files/Template MICA 2026.pptx" class="mica-btn" download>
                                 <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
                                 TẢI MẪU SLIDE BÁO CÁO
-                            </a>`;
+                            </a>
+                        </div>`;
 
     const htmlTaiTro = `<img src="/files/don-vi-tai-tro-mica-2026.jpg" alt="" width="100%">`;
 
@@ -1592,12 +1594,13 @@
             // Dựng khung chung có thanh tìm kiếm
             mainContent.innerHTML = `
             <div style="display: flex; align-items: left;">
-                <div class="mica-page-title">${title}</div>
-                <a href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link' class="mica-btn" download>
+                <div class="mica-page-title">${title} 
+                ${activeMenuId === 'chi-tiet' ? `<a href='https://drive.google.com/file/d/13wUcdgHbjxYK4PRYXXkv4-nq_4TMcwM3/view?usp=drive_link' class="mica-btn" download>
                     <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
                     TẢI CHƯƠNG TRÌNH HỘI NGHỊ
-                </a>
+                </a></div>` : ''}
             </div>
+
                 <div style="padding: 0 16px 40px 16px;">
                     <!-- Thanh Tìm Kiếm -->
                     <div style="margin-bottom: 16px; position: relative;">
