@@ -29,15 +29,21 @@
     const detailedData = {
         "can-tho": [
             {
+                "time": "07:30 - 08:00",
+                "title": "ĐÓN TIẾP ĐẠI BIỂU",
+                "chairs": "",
+                "talks": []
+            },
+            {
                 "time": "08:00 - 08:30",
                 "title": "LỄ KHAI MẠC / OPENING CEREMONY",
                 "chairs": "",
                 "talks": []
             },
             {
-                "time": "08:30 - 10:11",
+                "time": "08:30 - 10:24",
                 "title": "KỶ NGUYÊN BÓNG PHỦ THUỐC TRONG CAN THIỆP MẠCH VÀNH",
-                "chairs": "PGs.Ts. Hồ Thượng Dũng - Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Nguyễn Văn Tân - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung",
+                "chairs": "GS.TS. Trương Quang Bình - PGs.Ts. Hồ Thượng Dũng - Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Nguyễn Văn Tân - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung",
                 "talks": [
                     {
                         "time": "08:30 - 08:42",
@@ -46,206 +52,211 @@
                     },
                     {
                         "time": "08:43 - 08:55",
+                        "topic": "Bóng phủ thuốc đã thay đổi can thiệp sang thương phân nhánh như thế nào?",
+                        "speaker": "GS.TS. Trương Quang Bình"
+                    },
+                    {
+                        "time": "08:56 - 09:08",
                         "topic": "Chiến lược phối hợp can thiệp tổn thương phân nhánh thân chung với stent phủ thuốc và bóng phủ thuốc",
                         "speaker": "TS. Trương Tú Trạch"
                     },
                     {
-                        "time": "08:56 - 09:08",
+                        "time": "09:09 - 09:21",
                         "topic": "Chuẩn bị tổn thương trong can thiệp bóng phủ thuốc: Yếu tố quyết định thành công lâm sàng",
                         "speaker": "PGs.Ts. Nguyễn Văn Tân"
                     },
                     {
-                        "time": "09:09 - 09:21",
+                        "time": "09:22 - 09:34",
                         "topic": "Bóng phủ thuốc có thay thế stent trong kỷ nguyên mới?",
                         "speaker": "PGs.Ts. Hồ Anh Bình"
                     },
                     {
-                        "time": "09:22 - 09:34",
+                        "time": "09:35 - 09:47",
                         "topic": "Bóng phủ thuốc ở sang thương de novo không phức tạp",
                         "speaker": "BsCKII. Lâm Duy Tân"
                     },
                     {
-                        "time": "09:35 - 09:47",
+                        "time": "09:48 - 10:00",
                         "topic": "Bóng phủ thuốc trong tái hẹp trong stent (ISR): Chiến lược điều trị tối ưu trong thực hành",
                         "speaker": "BsCKII. Đoàn Đức Huy"
                     },
                     {
-                        "time": "09:48 - 10:00",
+                        "time": "10:01 - 10:13",
                         "topic": "Vai trò của bóng phủ thuốc trong can thiệp tim mạch - thực trạng tại bệnh viện Tim Hà Nội",
                         "speaker": "BsCKII. Trần Trà Giang"
                     },
                     {
-                        "time": "10:01 - 10:11",
+                        "time": "10:14 - 10:24",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "10:12 - 11:40",
+                "time": "10:25 - 11:53",
                 "title": "CHIẾN LƯỢC CAN THIỆP SANG THƯƠNG PHỨC TẠP",
                 "chairs": "PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Nguyễn Văn Tân - TS. Đinh Đức Huy - BsCKII. Lý Ích Trung - BSCKII. Trần Văn Triệu",
                 "talks": [
                     {
-                        "time": "10:12 - 10:24",
+                        "time": "10:25 - 10:37",
                         "topic": "PCI cho tổn thương mạch vành hẹp lan tỏa",
                         "speaker": "TS. Đinh Đức Huy"
                     },
                     {
-                        "time": "10:25 - 10:37",
+                        "time": "10:38 - 10:50",
                         "topic": "SPIRIT 48: cập nhật kết quả 1 năm trong điều trị tổn thương động mạch vành dài",
                         "speaker": "BsCKII. Trần Văn Triệu"
                     },
                     {
-                        "time": "10:38 - 10:50",
+                        "time": "10:51 - 11:03",
                         "topic": "Kỹ thuật \"jailed balloon\" trong can thiệp tổn thương chia đôi: tip & trick",
                         "speaker": "PGs.Ts. Nguyễn Thượng Nghĩa"
                     },
                     {
-                        "time": "10:51 - 11:03",
+                        "time": "11:04 - 11:16",
                         "topic": "Kỹ thuật can thiệp phân nhánh Crush cải tiến và ứng dụng",
                         "speaker": "BSCKI. Nguyễn Đức Hưng"
                     },
                     {
-                        "time": "11:04 - 11:16",
+                        "time": "11:17 - 11:29",
                         "topic": "Bảo vệ nhánh bên chủ động trong can thiệp phân nhánh: ca lâm sàng",
                         "speaker": "ThS. Lê Quang Tuấn"
                     },
                     {
-                        "time": "11:17 - 11:29",
+                        "time": "11:30 - 11:42",
                         "topic": "Thiết kế mắt cáo mở của Supraflex Cruz: Giải pháp chuyên biệt cho sang thương phân nhánh",
                         "speaker": "BsCKI. Nguyễn Hữu Nghĩa"
                     },
                     {
-                        "time": "11:30 - 11:40",
+                        "time": "11:43 - 11:53",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "11:41 - 12:26",
+                "time": "11:54 - 12:39",
                 "title": "LIVE CASE IN A BOX: COMPLEX PCI",
                 "chairs": "Gs.Ts. Hoàng Anh Tiến - PGs.Ts. Huỳnh Văn Thưởng - TS. Nguyễn Quốc Thái - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
-                "panelists": 'Ts. Trương Tú Trạch - BsCKII. Huỳnh Quốc Bình',
+                "panelists": 'Ts. Trương Tú Trạch - TS. Ngô Minh Hùng',
                 "talks": [
                     {
-                        "time": "11:41 - 12:26",
+                        "time": "11:54 - 12:39",
                         "topic": "Bệnh viện Đa khoa Trung Ương Cần Thơ",
                         "speaker": "BsCKII. Trần Văn Triệu - BsCKI. Dương Hoàng Mẫn"
                     }
                 ]
             },
             {
-                "time": "12:27 - 13:55",
+                "time": "12:40 - 14:08",
                 "title": "TIẾP CẬN TOÀN DIỆN TỔN THƯƠNG MV VÔI HÓA NẶNG",
                 "chairs": "PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung - TS. Hoàng Văn - TS. Trương Tú Trạch",
                 "talks": [
                     {
-                        "time": "12:27 - 12:39",
+                        "time": "12:40 - 12:52",
                         "topic": "Các tiến bộ hiện tại trong can thiệp tổn thương mạch vành vôi hoá phức tạp",
                         "speaker": "TS.Hồ Minh Tuấn"
                     },
                     {
-                        "time": "12:40 - 12:52",
+                        "time": "12:53 - 13:05",
                         "topic": "Tiêu chuẩn lựa chọn bệnh nhân, đánh giá tổn thương động mạch vành vôi hóa và các chiến lược điều trị bằng sóng xung siêu âm",
                         "speaker": "PGs.Ts. Hồ Anh Bình"
                     },
                     {
-                        "time": "12:53 - 13:05",
+                        "time": "13:06 - 13:18",
                         "topic": "Kỹ thuật sử dụng bóng cắt trong thực hành: Mẹo và kinh nghiệm",
                         "speaker": "TS. Hoàng Văn"
                     },
                     {
-                        "time": "13:06 - 13:18",
+                        "time": "13:19 - 13:31",
                         "topic": "Khoan mảng xơ vữa trong kỷ nguyên IVL: Khi nào vẫn là lựa chọn tối ưu?",
                         "speaker": "BsCKII. Lý Ích Trung"
                     },
                     {
-                        "time": "13:19 - 13:31",
+                        "time": "13:32 - 13:44",
                         "topic": "Chiến lược phối hợp kỹ thuật: Xu hướng mới trong PCI vôi hóa nặng",
                         "speaker": "TS. Ngô Minh Hùng"
                     },
                     {
-                        "time": "13:32 - 13:44",
+                        "time": "13:45 - 13:57",
                         "topic": "Làm chủ những ca can thiệp phức tạp: Ưu điểm của cấu trúc kết nối LDZ của stent Supraflex Star trên các tổn thương xoắn vặn",
                         "speaker": "BsCKI. Nguyễn Hữu Nghĩa"
                     },
                     {
-                        "time": "13:45 - 13:55",
+                        "time": "13:58 - 14:08",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "13:55 - 14:40",
+                "time": "14:09 - 14:54",
                 "title": "LIVE CASE IN A BOX: CALCIFIED LESIONS",
                 "chairs": "PGs.Ts. Hồ Thượng Dũng - PGs.Ts. Nguyễn Thượng Nghĩa - PGs.Ts. Hồ Anh Bình - BsCKII. Lý Ích Trung - PGs.Ts. Đỗ Văn Chiến",
                 "panelists": 'BsCKII. Đoàn Thanh Tuấn - BsCKII. Trần Trà Giang',
                 "talks": [
                     {
-                        "time": "13:55 - 14:40",
+                        "time": "14:09 - 14:54",
                         "topic": "Bệnh viện Đa khoa Sóc Trăng",
-                        "speaker": "TS. Trương Tú Trạch - BsCKII. Lý Ích Trung"
+                        "speaker": "TS. Trương Tú Trạch - BSCKI. Huỳnh Công Danh"
                     }
                 ]
             },
             {
-                "time": "14:41 - 16:22",
+                "time": "14:55 - 16:36",
                 "title": "CẬP NHẬT VAI TRÒ HÌNH ẢNH HỌC NỘI MẠCH TRONG PCI",
                 "chairs": "PGs.Ts. Huỳnh Văn Thưởng - PGs.Ts. Đỗ Văn Chiến - TS. Nguyễn Quốc Thái - BsCKII. Nguyễn Đỗ Anh - TS. Vũ Hoàng Vũ",
                 "talks": [
                     {
-                        "time": "14:41 - 14:53",
+                        "time": "14:55 - 15:07",
                         "topic": "Kỷ nguyên chẩn đoán chính xác bệnh mạch vành!",
                         "speaker": "PGs.Ts. Huỳnh Văn Thưởng"
                     },
                     {
-                        "time": "14:54 - 15:06",
+                        "time": "15:08 - 15:20",
                         "topic": "Đặc điểm tổn thương qua IVUS, IVUS-NIRS và OCT: lựa chọn chiến lược PCI",
                         "speaker": "TS. Nguyễn Quốc Thái"
                     },
                     {
-                        "time": "15:07 - 15:19",
+                        "time": "15:21 - 15:33",
                         "topic": "Tối ưu hóa lựa chọn stent và kỹ thuật dưới hướng dẫn hình ảnh nội mạch",
                         "speaker": "BsCKII. Nguyễn Đỗ Anh"
                     },
                     {
-                        "time": "15:20 - 15:32",
+                        "time": "15:34 - 15:46",
                         "topic": "Vai trò của hình ảnh học nội mạch trong PCI tổn thương phức tạp: Thân chung, phân nhánh và tổn thương dài",
                         "speaker": "BsCKII. Trần Văn Triệu"
                     },
                     {
-                        "time": "15:33 - 15:45",
+                        "time": "15:47 - 15:59",
                         "topic": "Xu hướng mới trong PCI chính xác: IVUS-NIRS, tích hợp đa phương thức và trí tuệ nhân tạo",
                         "speaker": "TS. Vũ Hoàng Vũ"
                     },
                     {
-                        "time": "15:46 - 15:58",
+                        "time": "16:00 - 16:12",
                         "topic": "Vai trò OCT trong hướng dẫn can thiệp tổn thương vôi hóa",
                         "speaker": "TS. Nguyễn Thế Quyền"
                     },
                     {
-                        "time": "15:59 - 16:11",
+                        "time": "16:13 - 16:25",
                         "topic": "Vai trò của IVUS trong biến chứng do can thiệp động mạch vành.",
                         "speaker": "PGs.Ts. Đỗ Văn Chiến"
                     },
                     {
-                        "time": "16:12 - 16:22",
+                        "time": "16:26 - 16:36",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "16:25 - 17:10",
+                "time": "16:37 - 17:22",
                 "title": "LIVE CASE IN A BOX: IMAGE-GUIDED COMPLEX PCI",
-                "chairs": "BsCKII. Lý Ích Trung - TS. Nguyễn Quốc Thái - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
+                "chairs": "BsCKII. Lý Ích Trung - TS. Nguyễn Quốc Thái - BSCKII. Trần Văn Triệu - TS. Hoàng Văn - TS. Vũ Hoàng Vũ",
                 "panelists": 'BsCKII. Nguyễn Đỗ Anh - PGs.Ts. Trần Viết An',
                 "talks": [
                     {
-                        "time": "16:25 - 17:10",
+                        "time": "16:37 - 17:22",
                         "topic": "Bệnh viện Đa khoa Kiên Giang",
                         "speaker": "BsCKII. Lâm Hữu Giang - ThS. Trần Minh Trung"
                     }
@@ -256,17 +267,17 @@
             {
                 "time": "08:30 - 09:53",
                 "title": "ĐÁNH GIÁ NGUY CƠ SỚM ĐẾN KIỂM SOÁT NGUY CƠ TỒN DƯ",
-                "chairs": "PGs.Ts. Trần Kim Trang - TS. Nguyễn Hoàng Hải - TS. Lê Cao Phương Duy",
+                "chairs": "PGs.Ts. Trần Kim Trang - TS. Nguyễn Hoàng Hải - TS. Lê Cao Phương Duy - ThS.BSCKII. Lý Văn Chiêu",
                 "talks": [
                     {
                         "time": "08:30 - 08:42",
-                        "topic": "Đánh giá nguy cơ tim mạch xơ vữa người trẻ: PREVENT, Lp(a) hay PRS?",
-                        "speaker": "TS. Nguyễn Hoàng Hải"
+                        "topic": "Các yếu tố lu mờ trong điều trị hội chứng vành mạn",
+                        "speaker": "PGs.Ts. Trần Kim Trang"
                     },
                     {
                         "time": "08:43 - 08:55",
-                        "topic": "Điều trị rối loạn lipid máu ở người chưa có tiền sử tim mạch: có gì mới?",
-                        "speaker": "TS. Lê Cao Phương Duy"
+                        "topic": "Đánh giá nguy cơ tim mạch xơ vữa người trẻ: PREVENT, Lp(a) hay PRS?",
+                        "speaker": "TS. Nguyễn Hoàng Hải"
                     },
                     {
                         "time": "08:56 - 09:08",
@@ -275,30 +286,30 @@
                     },
                     {
                         "time": "09:09 - 09:21",
-                        "topic": "Cá thể hóa kháng kết tập tiểu cầu trên BN mạch vành kèm ĐTĐ",
-                        "speaker": "BsCKII. Trịnh Thanh Tâm"
+                        "topic": "Điều trị rối loạn lipid máu ở người chưa có tiền sử tim mạch: có gì mới?",
+                        "speaker": "TS. Lê Cao Phương Duy"
                     },
                     {
                         "time": "09:22 - 09:34",
-                        "topic": "Các yếu tố lu mờ trong điều trị hội chứng vành mạn",
-                        "speaker": "PGs.Ts. Trần Kim Trang"
+                        "topic": "Nguy cơ tim mạch tồn dư sau hội chứng vành cấp: Liệu Lp(a) có phải là đích điều trị tiếp theo?",
+                        "speaker": "ThS.BsCKII. Lý Văn Chiêu"
                     },
                     {
                         "time": "09:35 - 09:47",
-                        "topic": "Nguy cơ tim mạch tồn dư sau hội chứng vành cấp: Liệu Lp(a) có phải là đích điều trị tiếp theo?",
-                        "speaker": "ThS.BsCKII. Lý Văn Chiêu"
+                        "topic": "Cá thể hóa kháng kết tập tiểu cầu trên BN mạch vành kèm ĐTĐ",
+                        "speaker": "BsCKII. Trịnh Thanh Tâm"
                     },
                     {
                         "time": "09:48 - 09:53",
                         "topic": "Thảo luận",
                         "speaker": ""
-                    }
+                    },
                 ]
             },
             {
-                "time": "09:54 - 11:17",
+                "time": "09:54 - 11:30",
                 "title": "TIẾP CẬN MỚI TĂNG HUYẾT ÁP VÀ YẾU TỐ NGUY CƠ",
-                "chairs": "PGs.Ts. Hoàng Văn Sỹ - PGs.Ts. Trần Kim Sơn - BsCKII. Hà Minh Đức",
+                "chairs": "GS.TS. Đặng Vạn Phước - GS.TS. Trương Quang Bình - PGs.Ts. Trần Kim Sơn",
                 "talks": [
                     {
                         "time": "09:54 - 10:06",
@@ -307,46 +318,46 @@
                     },
                     {
                         "time": "10:07 - 10:19",
+                        "topic": "Xơ vữa động mạch là một bệnh viêm - Quan điểm mới làm thay đổi quan trọng trong chẩn đoán và điều trị các bệnh tim mạch",
+                        "speaker": "GS.TS. Đặng Vạn Phước"
+                    },
+                    {
+                        "time": "10:20 - 10:32",
                         "topic": "Những tiến bộ trong quản lý Tăng huyết áp - những hiểu biết từ các hướng dẫn mới nhất của Châu Âu",
                         "speaker": "TS. Nguyễn Đức Hoàng"
                     },
                     {
-                        "time": "10:20 - 10:32",
+                        "time": "10:33 - 10:45",
                         "topic": "Nhận diện đúng tăng huyết áp khó kiểm soát, kháng trị trên lâm sàng",
                         "speaker": "PGs.Ts. Trần Kim Sơn"
                     },
                     {
-                        "time": "10:33 - 10:45",
+                        "time": "10:46 - 10:58",
                         "topic": "Tăng huyết áp và bệnh thận mạn: Vai trò của phát hiện sớm trong tối ưu hóa điều trị",
                         "speaker": "BsCKII. Lê Tân Tố Anh"
                     },
                     {
-                        "time": "10:46 - 10:58",
-                        "topic": "Điền vào khoảng trống điều trị Tăng huyết áp: ức chế tổng hợp aldosterone - mắc xích điều trị tương lai",
-                        "speaker": "PGs.Ts. Hoàng Văn Sỹ"
+                        "time": "10:59 - 11:11",
+                        "topic": "Giải pháp nào cải thiện tiên lượng và chất lượng cuộc sống cho bệnh nhân hội chứng vành mạn",
+                        "speaker": "GS.TS. Trương Quang Bình"
                     },
                     {
-                        "time": "10:59 - 11:11",
+                        "time": "11:12 - 11:24",
                         "topic": "Cập nhật điều trị THA ở người bệnh đột quỵ não: Vai trò kiểm soát huyết áp mục tiêu",
                         "speaker": "BsCKII. Hà Minh Đức"
                     },
                     {
-                        "time": "11:12 - 11:17",
+                        "time": "11:25 - 11:30",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "11:18 - 12:41",
+                "time": "11:31 - 12:54",
                 "title": "ĐIỀU TRỊ TOÀN DIỆN SUY TIM",
                 "chairs": "Gs.Ts. Đặng Vạn Phước - TS. Lương Cao Sơn - TS. Nguyễn Tất Đạt",
                 "talks": [
-                    {
-                        "time": "11:18 - 11:30",
-                        "topic": "Quản lý tim mạch thận trên bệnh nhân đái tháo đường tuýp 2. Cập nhật theo ADA2026 hay IDF 2025",
-                        "speaker": "TS. Phan Hữu Hên"
-                    },
                     {
                         "time": "11:31 - 11:43",
                         "topic": "Bảo vệ Thận trên bệnh nhân Suy Tim",
@@ -373,145 +384,150 @@
                         "speaker": "BsCKI. Nguyễn Đức Chính"
                     },
                     {
-                        "time": "12:36 - 12:41",
+                        "time": "12:36 - 12:48",
+                        "topic": "Quản lý tim mạch thận trên bệnh nhân đái tháo đường tuýp 2. Cập nhật theo ADA2026 hay IDF 2025",
+                        "speaker": "TS. Phan Hữu Hên"
+                    },
+                    {
+                        "time": "12:49 - 12:54",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "12:42 - 13:30",
-                "title": "Ethyl Icosapentate: mảnh ghép hoàn hảo để giải quyết khoảng trống này. Số liệu từ nghiên cứu và các khuyến cáo hiện nay",
+                "time": "12:55 - 13:40",
+                "title": "NGUY CƠ TỒN DƯ TRONG RỐI LOẠN LIPID MÁU: THU HẸP KHOẢNG CÁCH TRONG THỰC HÀNH LÂM SÀNG",
                 "chairs": "PGs.Ts. Trần Viết An - TS. Phan Hữu Hên",
                 "talks": [
                     {
-                        "time": "12:42 - 12:57",
+                        "time": "12:55 - 13:10",
                         "topic": "Nguy cơ tồn dư của rối loạn mỡ máu liên quan đến biến chứng tim mạch như thế nào: còn khoảng trống nào trong thực hành lâm sàng?",
                         "speaker": "TS. Phan Hữu Hên"
                     },
                     {
-                        "time": "12:58 - 13:13",
+                        "time": "13:11 - 13:25",
                         "topic": "Ethyl Icosapentate: mảnh ghép hoàn hảo để giải quyết khoảng trống này. Số liệu từ nghiên cứu và các khuyến cáo hiện nay",
                         "speaker": "PGs.Ts. Trần Viết An"
                     },
                     {
-                        "time": "13:14 - 13:30",
+                        "time": "13:26 - 13:40",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "13:30 - 14:27",
+                "time": "13:41 - 15:20",
                 "title": "HỘI CHỨNG TIM – THẬN – CHUYỂN HÓA: TIẾP CẬN TÍCH HỢP VÀ ĐIỀU TRỊ TOÀN DIỆN",
                 "chairs": "TS. Phan Hữu Hên - PGs.Ts. Đỗ Đức Minh - ThS.BsCKII. Lý Văn Chiêu",
                 "talks": [
                     {
-                        "time": "13:30 - 13:42",
+                        "time": "13:41 - 13:53",
                         "topic": "Hội chứng tim - thận chuyển hóa: tập hợp các bệnh lý bị lãng quên như thế nào?",
                         "speaker": "TS. Phan Hữu Hên"
                     },
                     {
-                        "time": "13:43 - 13:55",
+                        "time": "13:54 - 14:06",
                         "topic": "Nhận diện sớm nguy cơ tim mạch ở bệnh nhân đái tháo đường: áp dụng vào thực hành lâm sàng như thế nào?",
                         "speaker": "PGs.Ts. Đỗ Đức Minh"
                     },
                     {
-                        "time": "13:56 - 14:08",
+                        "time": "14:07 - 14:19",
                         "topic": "Tiếp cận điều trị ĐTĐ típ 2 bằng phối hợp thuốc: từ kiểm soát đường huyết sớm đến bảo vệ tim thận lâu dài",
                         "speaker": "BsCKII. Lê Tân Tố Anh"
                     },
                     {
-                        "time": "14:09 - 14:21",
+                        "time": "14:20 - 14:32",
                         "topic": "Vai trò của liệu pháp nhắm đích Aldosterone trong THA khó kiểm soát- hiểu biết từ sinh lý bệnh đến bằng chứng lâm sàng",
                         "speaker": "ThS.BsCKII. Lý Văn Chiêu"
                     },
                     {
-                        "time": "14:22 - 14:27",
+                        "time": "14:33 - 14:38",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "14:28 - 16:04",
+                "time": "14:39 - 15:54",
                 "title": "ĐIỀU TRỊ BỆNH ĐỘNG MẠCH VÀNH TRONG KỶ NGUYÊN ĐA MỤC TIÊU",
                 "chairs": "PGs.Ts. Hoàng Văn Sỹ - BsCKII. Phạm Thanh Phong - TS. Phạm Trần Linh - TS. Bùi Thế Dũng",
                 "talks": [
                     {
-                        "time": "14:28 - 14:40",
+                        "time": "14:39 - 14:51",
                         "topic": "Hội chứng vành cấp có kèm bệnh lý tim mạch - thận - chuyển hóa: Thách thức và giải pháp",
                         "speaker": "PGs.Ts. Trần Viết An"
                     },
                     {
-                        "time": "14:41 - 14:53",
+                        "time": "14:52 - 15:04",
                         "topic": "Cập nhật mới về vai trò của SGLT2i trong điều trị suy tim sau nhồi máu cơ tim",
                         "speaker": "TS. Bùi Thế Dũng"
                     },
                     {
-                        "time": "14:54 - 15:06",
+                        "time": "15:05 - 15:17",
                         "topic": "Quản lý KKTTC cho Bệnh nhân Hội chứng vành cấp: từ hướng dẫn đến thực hành lâm sàng",
                         "speaker": "ThS. Mai Phạm Trung Hiếu"
                     },
                     {
-                        "time": "15:07 - 15:19",
-                        "topic": "Hạ LDL-C sau hội chứng vành cấp: “Sớm” hay “Bền vững”?",
-                        "speaker": "BsCKI. Nguyễn Đức Chính"
+                        "time": "15:18 - 15:30",
+                        "topic": "Xử trí đau thắt ngực trong hội chứng vành mạn: Điều trị nội khoa tối ưu trước và sau can thiệp mạch vành",
+                        "speaker": "GS.TS. Đặng Vạn Phước"
                     },
                     {
-                        "time": "15:20 - 15:32",
-                        "topic": "Điều trị Lipid máu trên bệnh nhân HCVC: lợi ích kiểm soát viêm và LDLc",
-                        "speaker": "BsCKII. Trần Văn Triệu"
-                    },
-                    {
-                        "time": "15:33 - 15:45",
+                        "time": "15:31 - 15:43",
                         "topic": "Vị trí của chẹn beta trong quản lý hội chứng vành mạn sau NMCT",
                         "speaker": "BsCKII. Phạm Thanh Phong"
                     },
                     {
-                        "time": "15:46 - 15:58",
+                        "time": "15:44 - 15:56",
+                        "topic": "Kiểm soát LDL-C ở bệnh nhân nguy cơ tim mạch cao/rất cao: Vì sao cần “sớm– mạnh – duy trì lâu dài",
+                        "speaker": "BSCKI. Nguyễn Đức Chính"
+                    },
+                    {
+                        "time": "15:57 - 16:09",
+                        "topic": "Điều trị Lipid máu trên bệnh nhân HCVC: Lợi ích kiểm soát viêm và LDL-c",
+                        "speaker": "BsCKII. Trần Văn Triệu"
+                    },
+                    {
+                        "time": "16:10 - 16:22",
                         "topic": "ICD sau nhồi máu cơ tim: Thời điểm thích hợp?",
                         "speaker": "TS. Phạm Trần Linh"
                     },
                     {
-                        "time": "15:59 - 16:04",
+                        "time": "16:23 - 16:28",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "16:05 - 17:15",
+                "time": "16:29 - 17:25",
                 "title": "TIẾP CẬN TOÀN DIỆN YẾU TỐ NGOÀI TIM MẠCH ẢNH HƯỞNG ĐẾN KẾT CỤC TIM MẠCH",
-                "chairs": "PGs.Ts. Nguyễn Văn Trí - PGs.Ts. Trần Kim Trang - PGs.Ts. Huỳnh Kim Phượng",
+                "chairs": "PGs.Ts. Nguyễn Văn Trí - PGs.Ts. Huỳnh Kim Phượng - BSCKII. Nguyễn Duy Khương",
                 "talks": [
                     {
-                        "time": "16:05 - 16:17",
-                        "topic": "Béo phì và biến cố tim mạch: tiếp cận và những tiến bộ điều trị hiện nay",
-                        "speaker": "ThS.BsCKII. Nguyễn Minh Nguyệt"
-                    },
-                    {
-                        "time": "16:18 - 16:30",
-                        "topic": "Béo phì: nốt trầm của suy tim EF bảo tồn",
-                        "speaker": "PGs.Ts. Trần Kim Trang"
-                    },
-                    {
-                        "time": "16:31 - 16:43",
+                        "time": "16:29 - 16:41",
                         "topic": "Điểm mới kiểm soát đường huyết trên bệnh nhân nội viện và giải pháp insulin nền mới điều trị Đái tháo đường trên bệnh nhân tim mạch",
                         "speaker": "BsCKII. Lưu Ngọc Trân"
                     },
                     {
-                        "time": "16:44 - 16:56",
+                        "time": "16:42 - 16:54",
                         "topic": "Cập nhật ESC về sức khỏe tâm thần và bệnh tim mạch",
                         "speaker": "PGs.Ts. Huỳnh Kim Phượng"
                     },
                     {
-                        "time": "16:57 - 17:09",
+                        "time": "16:55 - 17:07",
                         "topic": "Điều trị tăng kali máu cấp cứu: kiểm soát từ đầu giờ - bền vững đến dài lâu",
                         "speaker": "BSCKII. Huỳnh Quốc Sĩ"
                     },
                     {
-                        "time": "17:10 - 17:15",
+                        "time": "17:08 - 17:20",
+                        "topic": "Gói giải pháp quản lý toàn diện bệnh tim mạch – chuyển hoá",
+                        "speaker": "BSCKII. Nguyễn Duy Khương"
+                    },
+                    {
+                        "time": "17:21 - 17:25",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
@@ -520,7 +536,7 @@
         ],
         "soc-trang": [
             {
-                "time": "08:30 - 09:46",
+                "time": "08:30 - 10:00",
                 "title": "VAI TRÒ CAN THIỆP SỚM ĐỂ CẢI THIỆN TIÊN LƯỢNG HỘI CHỨNG TIM - THẬN - CHUYỂN HÓA",
                 "chairs": "GS.TS. Đặng Vạn Phước - PGs.Ts. Nguyễn Văn Trí - TS. Trần Viết Thắng",
                 "talks": [
@@ -546,35 +562,35 @@
                     },
                     {
                         "time": "09:28 - 09:40",
-                        "topic": "Gói giải pháp quản lý toàn diện bệnh tim mạch – chuyển hoá",
-                        "speaker": "BsCKII. Nguyễn Duy Khương"
+                        "topic": "Béo phì: Nốt trầm của suy tim EF bảo tồn",
+                        "speaker": "PGS.TS. Trần Kim Trang"
                     },
                     {
-                        "time": "09:41 - 09:46",
+                        "time": "09:41 - 09:53",
+                        "topic": "Béo phì và biến cố tim mạch: Tiếp cận và những tiến bộ điều trị hiện nay",
+                        "speaker": "PGS.TS. Trần Kim Trang"
+                    },
+                    {
+                        "time": "09:54 - 10:00",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
                 ]
             },
             {
-                "time": "09:47 - 10:57",
+                "time": "10:01 - 10:57",
                 "title": "CAN THIỆP CTO: KHI NÀO, BẰNG CÁCH NÀO?",
                 "chairs": "Ts Bs. Vũ Hoàng Vũ - Ts Bs. Ngô Minh Hùng - TS. Trần Bá Hiếu",
                 "talks": [
                     {
-                        "time": "09:47 - 09:59",
+                        "time": "10:01 - 10:12",
                         "topic": "Cập nhật can thiệp CTO: chỉ định, tiếp cận can thiệp",
                         "speaker": "TS. Trần Bá Hiếu"
                     },
                     {
-                        "time": "10:00 - 10:12",
+                        "time": "10:13 - 10:25",
                         "topic": "Can thiệp xuôi dòng như thế nào với hướng dẫn của IVUS",
                         "speaker": "BsCKII. Lê Văn Tuyến"
-                    },
-                    {
-                        "time": "10:13 - 10:25",
-                        "topic": "CTO case",
-                        "speaker": "ThS. Phan Anh Khoa"
                     },
                     {
                         "time": "10:26 - 10:38",
@@ -584,7 +600,7 @@
                     {
                         "time": "10:39 - 10:51",
                         "topic": "CTO case",
-                        "speaker": "ThS. Nguyễn Hữu Đức"
+                        "speaker": "ThS. Phan Anh Khoa"
                     },
                     {
                         "time": "10:52 - 10:57",
@@ -802,8 +818,8 @@
                 "talks": [
                     {
                         "time": "10:30 - 10:42",
-                        "topic": "Cas lâm sàng: Thuyên tắc phổi biến chứng sốc tắc nghẽn điều trị bằng thuốc Tiêu sợi huyết",
-                        "speaker": "BsCKI. Nguyễn Thế Vinh"
+                        "topic": "Huyết khối tĩnh mạch sâu ở bệnh nhân mắc hội chứng kháng phospholipid?",
+                        "speaker": "ThS. Nguyễn Duy Khuê"
                     },
                     {
                         "time": "10:43 - 10:55",
@@ -844,7 +860,7 @@
                     },
                     {
                         "time": "11:59 - 12:11",
-                        "topic": "Cas can thiệp động mạch vành của người mới bắt đầu",
+                        "topic": "Case can thiệp động mạch vành của người mới bắt đầu",
                         "speaker": "BS. Nguyễn Quốc Việt"
                     },
                     {
@@ -865,32 +881,37 @@
                 ]
             },
             {
-                "time": "13:30 - 14:40",
+                "time": "14:00 - 15:30",
                 "title": "NGHIÊN CỨU KHOA HỌC",
-                "chairs": "BsCKII. Lê Tân Tố Anh - ThS.BsCKII. Nguyễn Minh Nguyệt",
+                "chairs": "BSCKII. Huỳnh Thanh Hữu - BSCKII. Lê Văn Cường - ThS.BsCKII. Nguyễn Minh Nguyệt",
                 "talks": [
                     {
-                        "time": "13:30 - 13:45",
+                        "time": "14:00 - 14:15",
                         "topic": "Mối liên quan giữa đa hình gen microRNA-146a, các yếu tố nguy cơ tim mạch và biến cố tim mạch chính ở bệnh nhân nhồi máu cơ tim cấp.",
                         "speaker": "Ths. Ngô Hoàng Toàn"
                     },
                     {
-                        "time": "13:45 - 14:00",
+                        "time": "14:15 - 14:30",
                         "topic": "Quản lý bệnh động mạch vành tại TPHCM: Vai trò của việc tự chăm sóc bản thân và kiến thức về bệnh trong việc giảm hành vi nguy cơ sức khỏe",
                         "speaker": "Ts.ĐD. Nguyễn Thị Phương Uyên"
                     },
                     {
-                        "time": "14:00 - 14:15",
-                        "topic": "Đánh giá hiệu quả thông tim can thiệp tim bẩm sinh ở trẻ em tại Bệnh viện Nhi Đồng thành phố Cần Thơ",
-                        "speaker": "ThS. Lê Hoàng Khoa"
-                    },
-                    {
-                        "time": "14:15 - 14:30",
+                        "time": "14:30 - 14:45",
                         "topic": "Mô tả sự khác biệt tỷ số bạch cầu đa nhân trung tính bạch cầu lympho ở bệnh nhân HCVM và HCVC tại Bệnh viện Hùng Vương Gia Lai",
                         "speaker": "Ths.BSNT. Võ Văn Thọ"
                     },
                     {
-                        "time": "14:30 - 14:40",
+                        "time": "14:45 - 15:00",
+                        "topic": "Đánh giá hiệu quả thông tim can thiệp tim bẩm sinh ở trẻ em tại Bệnh viện Nhi Đồng thành phố Cần Thơ",
+                        "speaker": "BSCKI. Lê Hoàng Khoa"
+                    },
+                    {
+                        "time": "15:00 - 15:15",
+                        "topic": "Incremental predictive value of sLOX-1 in models for clinical phenotypes and high-risk profiles of acute coronary",
+                        "speaker": "ThS.BSNT. Nguyễn Thế Bảo"
+                    },
+                    {
+                        "time": "15:15 - 15:30",
                         "topic": "Thảo luận",
                         "speaker": ""
                     }
@@ -901,6 +922,10 @@
 
     // --- DỮ LIỆU BÁO CÁO VIÊN TRÍCH XUẤT TỪ FILE WORD ---
     const speakersData = [
+        {
+            "name": "GS.TS. Trương Quang Bình",
+            "desc": "Chủ tịch Hội đồng khoa học - Bệnh viện Đại học Y Dược Thành phố Hồ Chí Minh<br>Chủ tịch Phân hội Xơ vữa Động mạch Việt Nam"
+        },
         {
             "name": "GS.TS. Nguyễn Hoàng Định",
             "desc": "Phó Giám đốc Bệnh viện Đại học Y Dược Thành phố Hồ Chí Minh"
@@ -948,10 +973,6 @@
         {
             "name": "PGS.TS. Trần Kim Sơn",
             "desc": "Chủ tịch Liên chi hội Tăng huyết áp Đồng bằng sông Cửu Long<br>Trưởng Khoa Khám bệnh, Bệnh viện Trường Đại học Y Dược Cần Thơ"
-        },
-        {
-            "name": "PGS.TS. Hoàng Văn Sỹ",
-            "desc": "Trưởng Bộ môn Nội Tổng quát, Trường Y, Đại học Y Dược TP. Hồ Chí Minh<br>Trưởng Khoa Nội Tim mạch, Bệnh viện Chợ Rẫy"
         },
         {
             "name": "PGS.TS. Nguyễn Văn Tân",
@@ -1214,6 +1235,10 @@
             "desc": "Trung tâm Tim mạch, Bệnh viện Trung Ương Huế"
         },
         {
+            "name": "ThS.BS. Nguyễn Duy Khuê",
+            "desc": "Bệnh viện Trường Đại học Y Dược Cần Thơ."
+        },
+        {
             "name": "ThS.BSNT. Trần Đức Minh",
             "desc": "Khoa Tim mạch, Bệnh viện Đa khoa Tâm Anh Hà Nội"
         },
@@ -1280,6 +1305,10 @@
         {
             "name": "BSCKI. Nguyễn Hữu Nghĩa",
             "desc": "Phó trưởng khoa Tim mạch can thiệp – Bệnh viện Tim mạch An Giang"
+        },
+        {
+            "name": "BSCKI. Lâm Duy Tân",
+            "desc": "Đơn nguyên Tim mạch Can thiệp, Bệnh viện đa khoa Tây Ninh"
         },
         {
             "name": "BSCKI. Nguyễn Thế Tiến",
