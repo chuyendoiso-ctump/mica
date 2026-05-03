@@ -73,7 +73,7 @@
                     {
                         "time": "09:35 - 09:47",
                         "topic": "Bóng phủ thuốc ở sang thương de novo không phức tạp",
-                        "speaker": "BsCKII. Lâm Duy Tân"
+                        "speaker": "BsCKI. Lâm Duy Tân"
                     },
                     {
                         "time": "09:48 - 10:00",
@@ -356,7 +356,7 @@
             {
                 "time": "11:31 - 12:54",
                 "title": "ĐIỀU TRỊ TOÀN DIỆN SUY TIM",
-                "chairs": "Gs.Ts. Đặng Vạn Phước - TS. Lương Cao Sơn - TS. Nguyễn Tất Đạt",
+                "chairs": "GS.TS. Trương Quang Bình - PGS.TS. Trần Kim Trang - TS. Lương Cao Sơn - TS. Nguyễn Tất Đạt",
                 "talks": [
                     {
                         "time": "11:31 - 11:43",
@@ -418,7 +418,7 @@
                 ]
             },
             {
-                "time": "13:41 - 15:20",
+                "time": "13:41 - 14:38",
                 "title": "HỘI CHỨNG TIM – THẬN – CHUYỂN HÓA: TIẾP CẬN TÍCH HỢP VÀ ĐIỀU TRỊ TOÀN DIỆN",
                 "chairs": "TS. Phan Hữu Hên - PGs.Ts. Đỗ Đức Minh - ThS.BsCKII. Lý Văn Chiêu",
                 "talks": [
@@ -450,9 +450,9 @@
                 ]
             },
             {
-                "time": "14:39 - 15:54",
+                "time": "14:39 - 16:28",
                 "title": "ĐIỀU TRỊ BỆNH ĐỘNG MẠCH VÀNH TRONG KỶ NGUYÊN ĐA MỤC TIÊU",
-                "chairs": "PGs.Ts. Hoàng Văn Sỹ - BsCKII. Phạm Thanh Phong - TS. Phạm Trần Linh - TS. Bùi Thế Dũng",
+                "chairs": "GS.TS. Đặng Vạn Phước - BsCKII. Phạm Thanh Phong - TS. Phạm Trần Linh - TS. Bùi Thế Dũng",
                 "talks": [
                     {
                         "time": "14:39 - 14:51",
@@ -548,7 +548,7 @@
                     {
                         "time": "08:46 - 08:58",
                         "topic": "Hội chứng tim mạch - thận - chuyển hóa: tiếp cận như thế nào là phù hợp nhất?",
-                        "speaker": "BsCK2. Lưu Ngọc Trân"
+                        "speaker": "BSCKII. Lưu Ngọc Trân"
                     },
                     {
                         "time": "08:59 - 09:14",
@@ -787,7 +787,7 @@
                     {
                         "time": "",
                         "topic": "Bệnh viện Đa khoa Trung Ương Cần Thơ",
-                        "speaker": "BsCKII. Phạm Thnah Phong"
+                        "speaker": "BsCKII. Phạm Thanh Phong"
                     },
                     {
                         "time": "",
