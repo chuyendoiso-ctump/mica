@@ -225,7 +225,7 @@
                     {
                         "time": "15:34 - 15:46",
                         "topic": "Vai trò của hình ảnh học nội mạch trong PCI tổn thương phức tạp: Thân chung, phân nhánh và tổn thương dài",
-                        "speaker": "BsCKII. Trần Văn Triệu"
+                        "speaker": "TS. Nguyễn Tuấn Anh"
                     },
                     {
                         "time": "15:47 - 15:59",
@@ -995,6 +995,10 @@
             "desc": "Chủ tịch Liên chi Hội Lão khoa TP. Hồ Chí Minh"
         },
         {
+            "name": "TS.BS. Nguyễn Tuấn Anh",
+            "desc": "Khoa Tim mạch Can thiệp, Trung tâm Tim mạch, Bệnh viện Chợ Rẫy"
+        },
+        {
             "name": "TS.BS. Phạm Minh Ánh",
             "desc": "Trưởng đơn vị Đơn Vị Phẫu Thuật Can Thiệp Mạch Máu Bệnh viện Vạn Hạnh (TPHCM)"
         },
@@ -1601,9 +1605,9 @@
             // Sử dụng addEventListener (chuẩn của React/JS hiện đại) thay cho onclick
             li.addEventListener('click', () => {
                 activeMenuId = menu.id;
-                
+
                 const globalSearch = document.getElementById('mica-global-search');
-                if(globalSearch) {
+                if (globalSearch) {
                     globalSearch.value = '';
                 }
                 searchQuery = '';
@@ -1635,7 +1639,7 @@
             mainContent.innerHTML = `
             <div style="display: flex; align-items: left;">
                 <div class="mica-page-title">${title} 
-                ${activeMenuId === 'chi-tiet' ? `<a target='_blank' href='https://drive.google.com/file/d/1eBbmWuqhkTC9kYlLd8xR7r7r1DDQpK_G/view?usp=drive_link' class="mica-btn" download>
+                ${activeMenuId === 'chi-tiet' ? `<a target='_blank' href='https://drive.google.com/file/d/16-d8YABFsxAkxPR5g-404CvBKf4E9I0p/view?usp=sharing' class="mica-btn" download>
                     <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
                     TẢI CHƯƠNG TRÌNH HỘI NGHỊ
                 </a>` : ''}
@@ -1677,7 +1681,7 @@
     function initGlobalSearch() {
         const nav = document.querySelector('.mica-nav');
         if (!nav) return;
-        
+
         const searchDiv = document.createElement('div');
         searchDiv.style.padding = '12px 12px 0 12px';
         searchDiv.innerHTML = `
@@ -1704,7 +1708,7 @@
                 if (activeMenuId === 'bao-cao-vien') updateBaoCaoVienView();
             }
         });
-        
+
         searchInput.addEventListener('focus', () => searchInput.style.borderColor = '#3b82f6');
         searchInput.addEventListener('blur', () => searchInput.style.borderColor = '#cbd5e1');
     }
