@@ -159,7 +159,7 @@
                     },
                     {
                         "time": "12:53 - 13:05",
-                        "topic": "Tiêu chuẩn lựa chọn bệnh nhân, đánh giá tổn thương động mạch vành vôi hóa và các chiến lược điều trị bằng sóng xung siêu âm",
+                        "topic": "Tiêu chuẩn lựa chọn bệnh nhân, đánh giá tổn thương động mạch vành vôi hóa và các chiến lược điều trị bằng IVL",
                         "speaker": "PGs.Ts. Hồ Anh Bình"
                     },
                     {
