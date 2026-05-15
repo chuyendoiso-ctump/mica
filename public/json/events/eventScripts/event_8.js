@@ -1738,7 +1738,7 @@
 
         if (activeMenuId === 'tong-quan') {
             mainContent.innerHTML = htmlTongQuan;
-        } else if (activeMenuId === 'chi-tiet' || activeMenuId === 'bao-cao-vien' || activeMenuId === 'ca-lam-sang') {
+        } else if (activeMenuId === 'chi-tiet' || activeMenuId === 'bao-cao-vien') {
             const title = activeMenuId === 'chi-tiet' ? 'Chương trình chi tiết' : 'Chủ tọa & Báo cáo viên';
 
             // Dựng khung chung KHÔNG CÓ thanh tìm kiếm bên trong
