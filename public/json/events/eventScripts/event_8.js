@@ -25,6 +25,47 @@
         'goc-giao-luu-mica': { name: 'Góc MICA', color: '#a609b4ff', bg: '#fef3c7', border: '#fde68a' }  // Vàng cam
     };
 
+    // Dữ liệu Video Ca Lâm Sàng
+    const liveCasesData = [
+        {
+            id: '1',
+            title: 'Can thiệp sang thương chia đôi tại vị trí thân chung - Phần 1',
+            speaker: 'BSCKII. Trần Văn Triệu - BsCKI. Dương Hoàng Mẫn',
+            hospital: 'Bệnh viện Đa khoa Trung ương Cần Thơ',
+            // Thay ID của link google drive vào đây (Vd: https://drive.google.com/file/d/ID_CUA_BAN/view)
+            driveId: '1UCw0mbbwRdwarf_M6_LchizBAG3vEWIh'
+        },
+        {
+            id: '2',
+            title: 'Can thiệp sang thương chia đôi tại vị trí thân chung - Phần 2',
+            speaker: 'BSCKII. Trần Văn Triệu - BsCKI. Dương Hoàng Mẫn',
+            hospital: 'Bệnh viện Đa khoa Trung ương Cần Thơ',
+            // Thay ID của link google drive vào đây (Vd: https://drive.google.com/file/d/ID_CUA_BAN/view)
+            driveId: '12_gpkTkpRCrduGIqOI4__EJI7-v2639L'
+        },
+        {
+            id: '3',
+            title: 'CALCIFIED LESIONS - Phần 1',
+            speaker: 'TS. Trương Tú Trạch - BSCKI. Huỳnh Công Danh',
+            hospital: 'Bệnh viện Đa khoa Sóc Trăng',
+            driveId: '1BLjiVB80aqbfkAb0CYhxItYiq2Mva7d9'
+        },
+        {
+            id: '4',
+            title: 'CALCIFIED LESIONS - Phần 2',
+            speaker: 'TS. Trương Tú Trạch - BSCKI. Huỳnh Công Danh',
+            hospital: 'Bệnh viện Đa khoa Sóc Trăng',
+            driveId: '1f2FGBHmeptagSvKdAh_emeNzjwqIFcRN'
+        },
+        {
+            id: '5',
+            title: 'IMAGE-GUIDED COMPLEX PCI',
+            speaker: 'BsCKII. Lâm Hữu Giang - ThS. Trần Minh Trung',
+            hospital: 'Bệnh viện Đa khoa Kiên Giang',
+            driveId: '18Qii9cg4ZZyWMZtwfh0-SbxAV-B820Oh'
+        }
+    ];
+
     // Dữ liệu chi tiết trích xuất từ CSV
     const detailedData = {
         "can-tho": [
@@ -1502,6 +1543,71 @@
         `}).join('');
     }
 
+    // ---- CHỨC NĂNG POPUP VIDEO (MODAL) ----
+    window.openMicaVideo = (driveId) => {
+        const modal = document.createElement('div');
+        modal.id = 'mica-video-modal';
+        modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.9); z-index: 99999; display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; backdrop-filter: blur(4px); opacity: 0; transition: opacity 0.3s ease;';
+
+        modal.onclick = (e) => { if (e.target === modal) window.closeMicaVideo(); };
+
+        const closeBtn = `
+            <button onclick="window.closeMicaVideo()" style="position: absolute; top: 20px; right: 24px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: white; cursor: pointer; padding: 8px; transition: all 0.2s; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='scale(1.1)';" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='scale(1)';">
+                <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        `;
+
+        const iframeWrapper = `
+            <div style="width: 100%; max-width: 1000px; aspect-ratio: 16/9; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); position: relative; border: 1px solid rgba(255,255,255,0.1);">
+                <iframe src="https://drive.google.com/file/d/${driveId}/preview" width="100%" height="100%" allow="autoplay; fullscreen" style="border: none; position: absolute; top:0; left:0;"></iframe>
+            </div>
+        `;
+
+        modal.innerHTML = closeBtn + iframeWrapper;
+        document.body.appendChild(modal);
+        setTimeout(() => { modal.style.opacity = '1'; }, 10);
+    };
+
+    window.closeMicaVideo = () => {
+        const modal = document.getElementById('mica-video-modal');
+        if (modal) {
+            modal.style.opacity = '0';
+            setTimeout(() => { modal.remove(); }, 300);
+        }
+    };
+
+    // ---- RENDER TRANG VIDEO (Gọn hơn, không còn search) ----
+    function updateCaLamSangView() {
+        const listContainer = document.getElementById('mica-live-cases-list');
+        if (!listContainer) return;
+
+        if (liveCasesData.length === 0) {
+            listContainer.innerHTML = `<div style="text-align: center; padding: 40px; color: #64748b; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1; grid-column: 1 / -1;"><p style="margin: 0; font-size: 15px;">Dữ liệu đang được cập nhật.</p></div>`;
+            return;
+        }
+
+        listContainer.innerHTML = liveCasesData.map(caseItem => `
+            <div style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: white; cursor: pointer; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;" 
+                 onmouseover="this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,0.1)'; this.style.transform='translateY(-2px)'; this.querySelector('.play-btn').style.transform='scale(1.1)';" 
+                 onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)'; this.querySelector('.play-btn').style.transform='scale(1)';" 
+                 onclick="window.openMicaVideo('${caseItem.driveId}')">
+                
+                <div style="aspect-ratio: 16/9; background: linear-gradient(135deg, #1e3a8a, #0f172a); position: relative; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e2e8f0;">
+                    <svg class="play-btn" style="width: 56px; height: 56px; color: white; transition: transform 0.2s ease; opacity: 0.9;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: white; font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 500;">LIVE CASE</div>
+                </div>
+                
+                <div style="padding: 16px; flex: 1; display: flex; flex-direction: column;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 15px; color: #0f172a; line-height: 1.4; font-weight: 600;">${caseItem.title}</h4>
+                    <div style="margin-top: auto; padding-top: 10px; border-top: 1px dashed #e2e8f0;">
+                        <p style="margin: 0 0 4px 0; font-size: 13px; color: #1e3a8a; font-weight: 600;">👨‍⚕️ ${caseItem.speaker}</p>
+                        <p style="margin: 0; font-size: 12px; color: #64748b;">🏥 ${caseItem.hospital}</p>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+
     // Hàm global để nút bấm chọn Tab Hội trường gọi được
     window.setHall = (hallId) => {
         activeHall = hallId;
@@ -1632,7 +1738,7 @@
 
         if (activeMenuId === 'tong-quan') {
             mainContent.innerHTML = htmlTongQuan;
-        } else if (activeMenuId === 'chi-tiet' || activeMenuId === 'bao-cao-vien') {
+        } else if (activeMenuId === 'chi-tiet' || activeMenuId === 'bao-cao-vien' || activeMenuId === 'ca-lam-sang') {
             const title = activeMenuId === 'chi-tiet' ? 'Chương trình chi tiết' : 'Chủ tọa & Báo cáo viên';
 
             // Dựng khung chung KHÔNG CÓ thanh tìm kiếm bên trong
@@ -1661,6 +1767,15 @@
             mainContent.innerHTML = htmlMauSlide;
         } else if (activeMenuId === 'don-vi-tai-tro') {
             mainContent.innerHTML = htmlTaiTro;
+        } else if (activeMenuId === 'ca-lam-sang') {
+            mainContent.innerHTML = `
+                <div class="mica-page-title">Ca lâm sàng trực tiếp (Live Cases)</div>
+                <div class="mica-content-wrapper">
+                    <div id="mica-live-cases-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;"></div>
+                </div>
+            `;
+            updateCaLamSangView();
+
         } else {
             const currentMenu = menus.find(m => m.id === activeMenuId);
             mainContent.innerHTML = `
