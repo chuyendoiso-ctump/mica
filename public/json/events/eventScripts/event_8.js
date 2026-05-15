@@ -41,7 +41,7 @@
             speaker: 'BSCKII. Trần Văn Triệu - BsCKI. Dương Hoàng Mẫn',
             hospital: 'Bệnh viện Đa khoa Trung ương Cần Thơ',
             // Thay ID của link google drive vào đây (Vd: https://drive.google.com/file/d/ID_CUA_BAN/view)
-            driveId: '12_gpkTkpRCrduGIqOI4__EJI7-v2639L'
+            driveId: '1ToX_99geI9lCszVjA9VaVfgWsV8zFYpj'
         },
         {
             id: '3',
