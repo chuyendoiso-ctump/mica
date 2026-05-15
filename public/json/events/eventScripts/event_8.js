@@ -1592,9 +1592,17 @@
                  onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)'; this.querySelector('.play-btn').style.transform='scale(1)';" 
                  onclick="window.openMicaVideo('${caseItem.driveId}')">
                 
-                <div style="aspect-ratio: 16/9; background: linear-gradient(135deg, #1e3a8a, #0f172a); position: relative; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e2e8f0;">
-                    <svg class="play-btn" style="width: 56px; height: 56px; color: white; transition: transform 0.2s ease; opacity: 0.9;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-                    <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: white; font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 500;">LIVE CASE</div>
+                <!-- Hiển thị Thumbnail động từ Google Drive -->
+                <div style="aspect-ratio: 16/9; background-image: url('https://drive.google.com/thumbnail?id=${caseItem.driveId}&sz=w800'); background-color: #1e3a8a; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e2e8f0;">
+                    
+                    <!-- Lớp phủ mờ màu đen để nút Play luôn nổi bật -->
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.25);"></div>
+                    
+                    <svg class="play-btn" style="position: relative; z-index: 10; width: 56px; height: 56px; color: white; transition: transform 0.2s ease; opacity: 0.95; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    
+                    <div style="position: absolute; bottom: 8px; right: 8px; z-index: 10; background: rgba(220, 38, 38, 0.95); color: white; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: bold; letter-spacing: 0.05em; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">LIVE CASE</div>
                 </div>
                 
                 <div style="padding: 16px; flex: 1; display: flex; flex-direction: column;">
